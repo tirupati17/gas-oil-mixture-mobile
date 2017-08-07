@@ -48,9 +48,10 @@ const Calculator = ({
             style={[
               GlobalStyles.subheading,
               GlobalStyles.textCenterAligned,
+              GlobalStyles.marginLeftSml,
               {
+                maxWidth: 110,
                 width: inputWidth.gas,
-                maxWidth: 200,
               },
             ]}
             onChangeText={gas => setGasValue(gas)}
@@ -90,8 +91,8 @@ const Calculator = ({
               GlobalStyles.subheading,
               GlobalStyles.textCenterAligned,
               {
+                maxWidth: 110,
                 width: inputWidth.oil,
-                maxWidth: 200,
               },
             ]}
             onChangeText={oil => setOilValue(oil)}
@@ -106,15 +107,27 @@ const Calculator = ({
         title="Calculate"
         onPress={() => calculateResult()}
         color={Constants.PRIMARY_COLOR}
+        disabled={!!autoCalc}
       />
-      <Switch value={autoCalc} onValueChange={() => toggleAutoCalc()} />
+      <View
+        style={[
+          GlobalStyles.row,
+          GlobalStyles.middleAligned,
+          GlobalStyles.marginTopSml,
+        ]}
+      >
+        <Switch value={autoCalc} onValueChange={() => toggleAutoCalc()} />
+        <Text style={GlobalStyles.body}>
+          Turn {autoCalc ? 'OFF' : 'ON'} Auto calculation.
+        </Text>
+      </View>
     </View>
     <View style={[GlobalStyles.materialCard, GlobalStyles.centerAligned]}>
       <Text style={GlobalStyles.body}>You need add </Text>
       <Text style={GlobalStyles.title}>
         {`${result} ${getUnit().smallShort}`}
       </Text>
-      <Text style={GlobalStyles.body}>to your gasoline.</Text>
+      <Text style={GlobalStyles.body}>of oil to gasoline.</Text>
     </View>
   </View>;
 

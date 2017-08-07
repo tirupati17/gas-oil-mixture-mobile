@@ -29,6 +29,15 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  alignSelfStart: {
+    alignSelf: 'flex-start',
+  },
+  alignSelfCenter: {
+    alignSelf: 'center',
+  },
+  alignSelfEnd: {
+    alignSelf: 'flex-end',
+  },
 
   // Text Styles
   body: {
