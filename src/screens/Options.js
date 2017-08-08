@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Picker, Text } from 'react-native';
 
+//helpers
 import { GlobalStyles } from '../assets';
 
 const Options = ({ setUnit, selectedUnit }) =>

@@ -5,14 +5,15 @@ import {
   lifecycle,
   shouldUpdate,
 } from 'recompose';
-
-import Calculator from './Calculator';
-
-import { Constants } from '../assets';
-import { getResult } from '../helpers';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+
+//componenets
+import Calculator from './Calculator';
+
+//helpers
+import { Constants } from '../assets';
+import { getResult } from '../helpers';
 import {
   setGasValue,
   setOilValue,
@@ -30,7 +31,10 @@ const withReduxConnect = connect(
     autoCalc: state.autoCalc,
   }),
   dispatch =>
-    bindActionCreators({ setGasValue, setOilValue, setResult,setAutoCalc }, dispatch),
+    bindActionCreators(
+      { setGasValue, setOilValue, setResult, setAutoCalc },
+      dispatch,
+    ),
 );
 
 const withAutoInputWidth = withProps(props => ({
@@ -44,8 +48,8 @@ const withCalculation = withHandlers({
   calculateResult: ({ setResult }) => () => {
     setResult(getResult());
   },
-  toggleAutoCalc: ({ setAutoCalc,autoCalc }) => () => {
-      setAutoCalc(!autoCalc)
+  toggleAutoCalc: ({ setAutoCalc, autoCalc }) => () => {
+    setAutoCalc(!autoCalc);
   },
 });
 

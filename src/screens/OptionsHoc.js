@@ -2,10 +2,12 @@ import { compose, withHandlers } from 'recompose';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setMeasurementUnit, setResult } from '../store/actions';
-import { getResult } from '../helpers';
 
 //components
 import Options from './Options';
+
+//helpers
+import { getResult } from '../helpers';
 
 const withReduxConnect = connect(
   state => ({
