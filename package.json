@@ -1,6 +1,15 @@
 {
-  "name": "SuperGasOilRatioMixCalc",
-  "version": "0.0.1",
+  "name": "Gas/Oil Ratio Calculator",
+  "description": "Mobile app which calculate gasoline/oil ratio for 2 stroke engines.",
+  "version": "0.1",
+  "author": "Filip Papranec",
+  "keywords": [
+    "react-native",
+    "react-native-app",
+    "android",
+    "ios",
+    "gas-oil-calculator"
+  ],
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
