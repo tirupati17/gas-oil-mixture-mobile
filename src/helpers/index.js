@@ -47,5 +47,6 @@ export const getResult = () => {
     result = result * IMPERIAL_GAL_TO_OZ_CONST;
   }
   const rounded = Math.round(result);
-  return isFinite(rounded) ? rounded : 0;
+  const withFiniteCheck = isFinite(rounded) ? rounded : 0;
+  return withFiniteCheck.toLocaleString();
 };
