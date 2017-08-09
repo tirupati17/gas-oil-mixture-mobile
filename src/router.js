@@ -1,7 +1,9 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
+//helpers
 import { Constants } from './assets';
+import I18n from './i18n';
 
 //Screens
 import Calculator from './screens/CalculatorHoc';
@@ -15,7 +17,7 @@ const BeautifulGasOilMeter = StackNavigator(
     Calculator: {
       screen: Calculator,
       navigationOptions: ({ navigation }) => ({
-        title: 'Calculate Oil Ratio',
+        title: I18n.t('oilRatioCalculator'),
         headerRight: (
           <OptionsButton onPress={() => navigation.navigate('Options')} />
         ),
@@ -24,7 +26,7 @@ const BeautifulGasOilMeter = StackNavigator(
     Options: {
       screen: Options,
       navigationOptions: {
-        title: 'Options',
+        title: I18n.t('options'),
       },
     },
   },

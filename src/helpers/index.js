@@ -1,4 +1,5 @@
 import store from '../store/store';
+import I18n from '../i18n';
 
 const US_GAL_TO_OZ_CONST = 128;
 const IMPERIAL_GAL_TO_OZ_CONST = 160;
@@ -9,24 +10,24 @@ export const getUnit = () => {
   switch (measurementUnit) {
     case 'liters':
       return {
-        base: 'liter',
-        baseShort: 'l',
-        small: 'milliliter',
-        smallShort: 'ml',
+        base: I18n.t('liters'),
+        baseShort: I18n.t('l'),
+        small: I18n.t('milliliter'),
+        smallShort: I18n.t('ml'),
       };
     case 'us':
       return {
-        base: 'gallon',
-        baseShort: 'gal.',
-        small: 'ounce',
-        smallShort: 'oz.',
+        base: I18n.t('gallon'),
+        baseShort: I18n.t('gal'),
+        small: I18n.t('ounce'),
+        smallShort: I18n.t('oz'),
       };
     case 'imperial':
       return {
-        base: 'gallon',
-        baseShort: 'gal.',
-        small: 'ounce',
-        smallShort: 'oz.',
+        base: I18n.t('gallon'),
+        baseShort: I18n.t('gal'),
+        small: I18n.t('ounce'),
+        smallShort: I18n.t('oz'),
       };
   }
 };

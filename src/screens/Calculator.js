@@ -14,6 +14,7 @@ import Result from '../components/Result';
 //helpers
 import { Constants, GlobalStyles } from '../assets';
 import { getUnit } from '../helpers';
+import I18n from '../i18n';
 
 let secondInput;
 
@@ -50,7 +51,7 @@ const Calculator = ({
             <Text
               style={[GlobalStyles.subheading, GlobalStyles.paddingLeftSml]}
             >
-              Amount of fuel:
+              {I18n.t('amountOfFuel')}
             </Text>
           </View>
           <View style={[GlobalStyles.row, GlobalStyles.middleAligned]}>
@@ -96,7 +97,7 @@ const Calculator = ({
             <Text
               style={[GlobalStyles.subheading, GlobalStyles.paddingLeftSml]}
             >
-              Oil mix ratio:
+              {I18n.t('oilMixRatio')}
             </Text>
           </View>
           <View style={[GlobalStyles.row, GlobalStyles.middleAligned]}>
