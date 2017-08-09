@@ -179,7 +179,7 @@ export default StyleSheet.create({
 
   ///Material elements
   materialCard: {
-    marginTop: Sizes.paddingSml,
+    marginBottom: Sizes.paddingSml,
     marginHorizontal: Sizes.paddingSml,
     padding: Sizes.padding,
     borderRadius: Sizes.borderRadius,

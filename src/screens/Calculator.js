@@ -14,7 +14,6 @@ import Result from '../components/Result';
 //helpers
 import { Constants, GlobalStyles } from '../assets';
 import { getUnit } from '../helpers';
-import CalculateButton from '../components/CalculateButton';
 
 let secondInput;
 
@@ -31,7 +30,7 @@ const Calculator = ({
   autoCalc,
 }) =>
   <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
-    <KeyboardAvoidingView>
+    <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
       <View style={GlobalStyles.materialCard}>
         <View
           style={[
@@ -123,11 +122,6 @@ const Calculator = ({
             />
           </View>
         </View>
-        <CalculateButton
-          onPress={() => calculateResult()}
-          autoCalc={autoCalc}
-          toggleAutoCalc={() => toggleAutoCalc()}
-        />
       </View>
       <Result result={result} />
     </KeyboardAvoidingView>
