@@ -1,3 +1,5 @@
+import { Constants } from '../assets';
+
 const texts = {
   oilRatioCalculator: 'Kalkulačka Pomeru Oleja',
   options: 'Možnosti',
@@ -9,6 +11,9 @@ const texts = {
   litersUnit: 'Litre',
   usGallons: 'Americké galóny',
   imperialGallons: 'Imperial galóny',
+  shareApp: 'Zdieľaj aplikáciu',
+  shareMessage: `Super kalkulačka pomeru oleja/benzínu ${Constants.GOOGLE_PLAY_LINK}`,
+  shareTitle: 'Super Gas/Oil ratio calculator',
 };
 
 const units = {

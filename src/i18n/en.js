@@ -1,3 +1,5 @@
+import { Constants } from '../assets';
+
 const texts = {
   oilRatioCalculator: 'Oil Ratio Calculator',
   options: 'Options',
@@ -9,6 +11,9 @@ const texts = {
   litersUnit: 'Liters',
   usGallons: 'US gallons',
   imperialGallons: 'Imperial gallons',
+  shareApp: 'Share App',
+  shareMessage: `Super Gas/Oil ratio calculator ${Constants.GOOGLE_PLAY_LINK}`,
+  shareTitle: 'Super Gas/Oil ratio calculator',
 };
 
 const units = {

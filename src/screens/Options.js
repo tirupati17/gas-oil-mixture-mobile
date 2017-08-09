@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Picker, Text } from 'react-native';
+import { View, Picker, Text, Button } from 'react-native';
 
 //helpers
-import { GlobalStyles } from '../assets';
+import { GlobalStyles, Constants } from '../assets';
 import I18n from '../i18n';
 
-const Options = ({ setUnit, selectedUnit }) =>
+const Options = ({ setUnit, selectedUnit, shareApp }) =>
   <View style={[GlobalStyles.flex1, GlobalStyles.marginTopSml]}>
     <View style={GlobalStyles.materialCard}>
       <Text style={GlobalStyles.subheading}>
@@ -20,6 +20,13 @@ const Options = ({ setUnit, selectedUnit }) =>
         <Picker.Item label={I18n.t('usGallons')} value="us" />
         <Picker.Item label={I18n.t('imperialGallons')} value="imperial" />
       </Picker>
+    </View>
+    <View style={GlobalStyles.materialCard}>
+      <Button
+        onPress={() => shareApp()}
+        title={I18n.t('shareApp')}
+        color={Constants.PRIMARY_COLOR}
+      />
     </View>
   </View>;
 

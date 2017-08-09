@@ -10,4 +10,9 @@ const Values = {
   INITIAL_INPUT_WIDTH: 20,
 };
 
-export default { ...Colors, ...Values };
+const Urls = {
+  GOOGLE_PLAY_LINK:
+    'https://play.google.com/store/apps/details?id=com.filippofilip.oilratiocalc',
+};
+
+export default { ...Colors, ...Values, ...Urls };
