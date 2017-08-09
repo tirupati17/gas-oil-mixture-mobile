@@ -1,4 +1,4 @@
-package com.supergasoilratiomixcalc;
+package com.filippofilip.oilratiocalc;
 
 import android.app.Application;
 
