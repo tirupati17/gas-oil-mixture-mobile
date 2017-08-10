@@ -1,5 +1,7 @@
 import { Constants } from '../assets';
 
+//ENGLISH
+
 const texts = {
   oilRatioCalculator: 'Oil Ratio Calculator',
   options: 'Options',

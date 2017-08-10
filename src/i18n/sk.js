@@ -1,5 +1,7 @@
 import { Constants } from '../assets';
 
+//SLOVAK
+
 const texts = {
   oilRatioCalculator: 'Kalkulačka Pomeru Oleja',
   options: 'Možnosti',

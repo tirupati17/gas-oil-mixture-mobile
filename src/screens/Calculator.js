@@ -58,6 +58,7 @@ const Calculator = ({
             <TextInput
               keyboardType={'numeric'}
               returnKeyType={'next'}
+              maxLength={10}
               onSubmitEditing={() => secondInput.focus()}
               style={[
                 GlobalStyles.subheading,
@@ -106,6 +107,7 @@ const Calculator = ({
               keyboardType={'numeric'}
               ref={input => (secondInput = input)}
               returnKeyType={'done'}
+              maxLength={5}
               onSubmitEditing={() => calculateResult()}
               style={[
                 GlobalStyles.subheading,
