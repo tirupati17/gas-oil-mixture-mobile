@@ -10,11 +10,17 @@ import I18n from '../i18n';
 const Result = ({ result }) =>
   <View style={[GlobalStyles.materialCard, GlobalStyles.centerAligned]}>
     <View>
-      <Text style={[GlobalStyles.body, GlobalStyles.textCenterAligned]}>
+      <Text
+        selectable
+        style={[GlobalStyles.body, GlobalStyles.textCenterAligned]}
+      >
         {I18n.t('youNeedAdd')}
       </Text>
       <View>
-        <Text style={[GlobalStyles.title, GlobalStyles.textCenterAligned]}>
+        <Text
+          selectable
+          style={[GlobalStyles.title, GlobalStyles.textCenterAligned]}
+        >
           {`${result} ${getUnit().smallShort}`}
         </Text>
         <Icon
@@ -28,7 +34,10 @@ const Result = ({ result }) =>
           }}
         />
       </View>
-      <Text style={[GlobalStyles.body, GlobalStyles.textCenterAligned]}>
+      <Text
+        selectable
+        style={[GlobalStyles.body, GlobalStyles.textCenterAligned]}
+      >
         {I18n.t('ofOilToGasoline')}
       </Text>
     </View>

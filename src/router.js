@@ -10,7 +10,7 @@ import Calculator from './screens/CalculatorHoc';
 import Options from './screens/OptionsHoc';
 
 //Components
-import OptionsButton from './components/OptionsButton';
+import { OptionsButton } from './components';
 
 const BeautifulGasOilMeter = StackNavigator(
   {

@@ -78,6 +78,10 @@ export default StyleSheet.create({
     color: Constants.TEXT_COLOR,
     fontWeight: '700',
   },
+  link: {
+    color: Constants.PRIMARY_COLOR,
+    fontWeight: '500',
+  },
   // Helper Text Styles
   textCenterAligned: {
     textAlign: 'center',
@@ -194,6 +198,10 @@ export default StyleSheet.create({
   borderBottomLine: {
     borderBottomWidth: 1,
     borderBottomColor: Constants.SECONDARY_COLOR,
+  },
+  borderTopLine: {
+    borderTopWidth: 1,
+    borderTopColor: Constants.SECONDARY_COLOR,
   },
 
   // Grid

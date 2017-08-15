@@ -9,7 +9,7 @@ import {
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 //components
-import Result from '../components/Result';
+import { Result, RatioInfo } from '../components';
 
 //helpers
 import { Constants, GlobalStyles } from '../assets';
@@ -25,7 +25,7 @@ const Calculator = ({
   oilValue,
   result,
   inputWidth,
-  calculateResult
+  calculateResult,
 }) =>
   <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
     <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
@@ -124,6 +124,7 @@ const Calculator = ({
         </View>
       </View>
       <Result result={result} />
+      <RatioInfo setOilValue={setOilValue} />
     </KeyboardAvoidingView>
   </ScrollView>;
 
