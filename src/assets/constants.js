@@ -8,6 +8,7 @@ const Colors = {
 
 const Values = {
   INITIAL_INPUT_WIDTH: 20,
+  PERSISTED_REDUCERS: ['app', 'settings'],
 };
 
 const Urls = {

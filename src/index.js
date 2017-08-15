@@ -3,6 +3,7 @@ import { AppRegistry, AsyncStorage } from 'react-native';
 import { Provider } from 'react-redux';
 import { persistStore } from 'redux-persist';
 import { setAppReady } from './store/actions';
+import { Constants } from './assets/';
 
 import App from './init';
 import store from './store/store';
@@ -11,7 +12,7 @@ persistStore(
   store,
   {
     storage: AsyncStorage,
-    whitelist: ['app'],
+    whitelist: Constants.PERSISTED_REDUCERS,
   },
   () => {
     store.dispatch(setAppReady());

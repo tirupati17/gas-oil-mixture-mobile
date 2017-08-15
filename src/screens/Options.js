@@ -5,7 +5,16 @@ import { View, Picker, Text, Button } from 'react-native';
 import { GlobalStyles, Constants } from '../assets';
 import I18n from '../i18n';
 
-const Options = ({ setUnit, selectedUnit, shareApp }) =>
+//components
+import { AutoFocusSwitch } from '../components';
+
+const Options = ({
+  setUnit,
+  selectedUnit,
+  shareApp,
+  autoFocusInput,
+  toggleAutoFocus,
+}) =>
   <View style={[GlobalStyles.flex1, GlobalStyles.marginTopSml]}>
     <View style={GlobalStyles.materialCard}>
       <Text style={GlobalStyles.subheading}>
@@ -20,6 +29,10 @@ const Options = ({ setUnit, selectedUnit, shareApp }) =>
         <Picker.Item label={I18n.t('usGallons')} value="us" />
         <Picker.Item label={I18n.t('imperialGallons')} value="imperial" />
       </Picker>
+      <AutoFocusSwitch
+        autoFocusInput={autoFocusInput}
+        toggleAutoFocus={toggleAutoFocus}
+      />
     </View>
     <View style={GlobalStyles.materialCard}>
       <Button

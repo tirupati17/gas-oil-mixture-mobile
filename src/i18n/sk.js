@@ -23,6 +23,8 @@ const texts = {
   readManual:
     'Prečítajte si prosím vašu príručku pre Váš motor, pomery sa môžu líšiť od uvedených odporúčaní.',
   instructions: 'Inštrukcie',
+  autoFocusingOn: 'Zaostrenie pola Benzínu je pri štarte ZAPNUTÉ',
+  autoFocusingOff: 'Zaostrenie pola Benzínu je pri štarte VYPNUTÉ',
 };
 
 const units = {

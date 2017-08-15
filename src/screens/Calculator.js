@@ -26,6 +26,7 @@ const Calculator = ({
   result,
   inputWidth,
   calculateResult,
+  autoFocusInput,
 }) =>
   <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
     <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
@@ -56,7 +57,7 @@ const Calculator = ({
               keyboardType={'numeric'}
               returnKeyType={'next'}
               maxLength={10}
-              autoFocus
+              autoFocus={autoFocusInput}
               onSubmitEditing={() => secondInput.focus()}
               style={[
                 GlobalStyles.subheading,

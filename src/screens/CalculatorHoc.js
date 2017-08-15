@@ -16,9 +16,9 @@ const withReduxConnect = connect(
     oilValue: state.app.oilValue,
     result: state.app.result,
     measurementUnit: state.app.measurementUnit,
+    autoFocusInput: state.settings.autoFocusInput,
   }),
-  dispatch =>
-    bindActionCreators({ setGasValue, setOilValue }, dispatch),
+  dispatch => bindActionCreators({ setGasValue, setOilValue }, dispatch),
 );
 
 const withAutoInputWidth = withProps(props => ({

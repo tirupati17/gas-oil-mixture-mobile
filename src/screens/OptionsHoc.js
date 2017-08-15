@@ -2,7 +2,7 @@ import { compose, withHandlers } from 'recompose';
 import { Share } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { setMeasurementUnit } from '../store/actions';
+import { setMeasurementUnit, setAutoFocusInput } from '../store/actions';
 
 //components
 import Options from './Options';
@@ -14,14 +14,19 @@ import I18n from '../i18n';
 const withReduxConnect = connect(
   state => ({
     selectedUnit: state.app.measurementUnit,
+    autoFocusInput: state.settings.autoFocusInput,
   }),
-  dispatch => bindActionCreators({ setMeasurementUnit }, dispatch),
+  dispatch =>
+    bindActionCreators({ setMeasurementUnit, setAutoFocusInput }, dispatch),
 );
 
 const withOptionsHandlers = withHandlers({
   setUnit: ({ setMeasurementUnit, setResult }) => value => {
     setMeasurementUnit(value);
     getResult();
+  },
+  toggleAutoFocus: ({ setAutoFocusInput, autoFocusInput }) => () => {
+    setAutoFocusInput(!autoFocusInput);
   },
   shareApp: () => async () => {
     try {

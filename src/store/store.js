@@ -1,11 +1,11 @@
 import { createStore, combineReducers, compose } from 'redux';
 import { autoRehydrate } from 'redux-persist';
-import appReducer from './appReducer';
-import initReducer from './initReducer';
+import { initReducer, appReducer, settingsReducer } from './reducers';
 
 export default createStore(
   combineReducers({
     app: appReducer,
+    settings: settingsReducer,
     init: initReducer,
   }),
   {},

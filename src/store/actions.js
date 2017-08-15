@@ -25,6 +25,15 @@ export const setResult = payload => ({
   payload,
 });
 
+//SETTINGS PERSISETD ACTIONS
+
+export const SET_AUTO_FOCUS_INPUT = 'SET_AUTO_FOCUS_INPUT';
+
+export const setAutoFocusInput = payload => ({
+  type: SET_AUTO_FOCUS_INPUT,
+  payload,
+});
+
 //INIT NOT_PERSISTED ACTIONS
 
 export const SET_APP_READY = 'SET_APP_READY';
