@@ -8,7 +8,7 @@ const LITERS_L_TO_ML_CONST = 1000;
 
 export default () => {
 
-  const reduxStore = store.getState();
+  const reduxStore = store.getState().app;
   const unit = reduxStore.measurementUnit;
   const currentLocale = I18n.currentLocale();
   const oilRatio = parseFloat(reduxStore.oilValue);

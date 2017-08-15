@@ -12,10 +12,10 @@ import { setGasValue, setOilValue } from '../store/actions';
 
 const withReduxConnect = connect(
   state => ({
-    gasValue: state.gasValue,
-    oilValue: state.oilValue,
-    result: state.result,
-    measurementUnit: state.measurementUnit,
+    gasValue: state.app.gasValue,
+    oilValue: state.app.oilValue,
+    result: state.app.result,
+    measurementUnit: state.app.measurementUnit,
   }),
   dispatch =>
     bindActionCreators({ setGasValue, setOilValue }, dispatch),

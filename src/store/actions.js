@@ -1,3 +1,5 @@
+//APP PERSISTED ACTIONS
+
 export const SET_MEASUREMENT_UNIT = 'SET_MEASUREMENT_UNIT';
 export const SET_OIL_VALUE = 'SET_OIL_VALUE';
 export const SET_GAS_VALUE = 'SET_GAS_VALUE';
@@ -23,3 +25,11 @@ export const setResult = payload => ({
   payload,
 });
 
+//INIT NOT_PERSISTED ACTIONS
+
+export const SET_APP_READY = 'SET_APP_READY';
+
+export const setAppReady = payload => ({
+  type: SET_APP_READY,
+  payload,
+});

@@ -1,9 +1,22 @@
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, AsyncStorage } from 'react-native';
 import { Provider } from 'react-redux';
+import { persistStore } from 'redux-persist';
+import { setAppReady } from './store/actions';
 
-import App from './router';
+import App from './init';
 import store from './store/store';
+
+persistStore(
+  store,
+  {
+    storage: AsyncStorage,
+    whitelist: ['app'],
+  },
+  () => {
+    store.dispatch(setAppReady());
+  },
+);
 
 const SuperGasOilRatioMixCalc = () => {
   return (

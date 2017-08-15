@@ -2,7 +2,7 @@ import store from '../store/store';
 import I18n from '../i18n';
 
 export default () => {
-  const measurementUnit = store.getState().measurementUnit;
+  const measurementUnit = store.getState().app.measurementUnit;
   switch (measurementUnit) {
     case 'liters':
       return {

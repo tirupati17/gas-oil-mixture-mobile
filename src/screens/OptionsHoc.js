@@ -13,7 +13,7 @@ import I18n from '../i18n';
 
 const withReduxConnect = connect(
   state => ({
-    selectedUnit: state.measurementUnit,
+    selectedUnit: state.app.measurementUnit,
   }),
   dispatch => bindActionCreators({ setMeasurementUnit }, dispatch),
 );

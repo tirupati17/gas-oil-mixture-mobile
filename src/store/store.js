@@ -1,7 +1,16 @@
-import { createStore } from 'redux';
-import reducer from './reducer';
+import { createStore, combineReducers, compose } from 'redux';
+import { autoRehydrate } from 'redux-persist';
+import appReducer from './appReducer';
+import initReducer from './initReducer';
 
 export default createStore(
-  reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  combineReducers({
+    app: appReducer,
+    init: initReducer,
+  }),
+  {},
+  compose(
+    autoRehydrate(),
+    window.devToolsExtension ? window.devToolsExtension() : f => f,
+  ),
 );
