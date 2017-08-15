@@ -25,10 +25,7 @@ const Calculator = ({
   oilValue,
   result,
   inputWidth,
-  calculateResult,
-  setAutoCalculate,
-  toggleAutoCalc,
-  autoCalc,
+  calculateResult
 }) =>
   <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
     <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
@@ -59,6 +56,7 @@ const Calculator = ({
               keyboardType={'numeric'}
               returnKeyType={'next'}
               maxLength={10}
+              autoFocus
               onSubmitEditing={() => secondInput.focus()}
               style={[
                 GlobalStyles.subheading,
@@ -108,7 +106,6 @@ const Calculator = ({
               ref={input => (secondInput = input)}
               returnKeyType={'done'}
               maxLength={5}
-              onSubmitEditing={() => calculateResult()}
               style={[
                 GlobalStyles.subheading,
                 GlobalStyles.textCenterAligned,

@@ -1,10 +1,4 @@
-import {
-  compose,
-  withProps,
-  withHandlers,
-  lifecycle,
-  shouldUpdate,
-} from 'recompose';
+import { compose, withProps, lifecycle } from 'recompose';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -14,27 +8,17 @@ import Calculator from './Calculator';
 //helpers
 import { Constants } from '../assets';
 import { getResult } from '../helpers';
-import {
-  setGasValue,
-  setOilValue,
-  setResult,
-  setAutoCalc,
-} from '../store/actions';
+import { setGasValue, setOilValue } from '../store/actions';
 
 const withReduxConnect = connect(
   state => ({
-    calcValues: state.calcValues,
     gasValue: state.gasValue,
     oilValue: state.oilValue,
     result: state.result,
     measurementUnit: state.measurementUnit,
-    autoCalc: state.autoCalc,
   }),
   dispatch =>
-    bindActionCreators(
-      { setGasValue, setOilValue, setResult, setAutoCalc },
-      dispatch,
-    ),
+    bindActionCreators({ setGasValue, setOilValue }, dispatch),
 );
 
 const withAutoInputWidth = withProps(props => ({
@@ -44,32 +28,17 @@ const withAutoInputWidth = withProps(props => ({
   },
 }));
 
-const withCalculation = withHandlers({
-  calculateResult: ({ setResult }) => () => {
-    setResult(getResult());
-  },
-  toggleAutoCalc: ({ setAutoCalc, autoCalc }) => () => {
-    setAutoCalc(!autoCalc);
-  },
-});
-
 const withFirstCalculation = lifecycle({
   componentWillMount() {
-    this.props.calculateResult();
+    getResult();
   },
-});
-
-const withAutoUpdate = shouldUpdate((props, nextProps) => {
-  if (nextProps.autoCalc) {
-    props.setResult(getResult());
-  }
-  return true;
+  componentWillReceiveProps() {
+    getResult();
+  },
 });
 
 export default compose(
   withReduxConnect,
-  withCalculation,
   withAutoInputWidth,
   withFirstCalculation,
-  withAutoUpdate,
 )(Calculator);

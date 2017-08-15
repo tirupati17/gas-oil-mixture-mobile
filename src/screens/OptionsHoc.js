@@ -2,7 +2,7 @@ import { compose, withHandlers } from 'recompose';
 import { Share } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { setMeasurementUnit, setResult } from '../store/actions';
+import { setMeasurementUnit } from '../store/actions';
 
 //components
 import Options from './Options';
@@ -15,13 +15,13 @@ const withReduxConnect = connect(
   state => ({
     selectedUnit: state.measurementUnit,
   }),
-  dispatch => bindActionCreators({ setMeasurementUnit, setResult }, dispatch),
+  dispatch => bindActionCreators({ setMeasurementUnit }, dispatch),
 );
 
 const withOptionsHandlers = withHandlers({
   setUnit: ({ setMeasurementUnit, setResult }) => value => {
     setMeasurementUnit(value);
-    setResult(getResult());
+    getResult();
   },
   shareApp: () => async () => {
     try {

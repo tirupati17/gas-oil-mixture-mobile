@@ -3,7 +3,6 @@ const initialState = {
   oilValue: '50',
   gasValue: '10',
   result: '',
-  autoCalc: true,
 };
 
 const onlyNumbers = string => string.replace(/[^0-9.]/g, '');
@@ -29,11 +28,6 @@ export default (state = initialState, action) => {
       return {
         ...state,
         result: action.payload,
-      };
-    case 'SET_AUTO_CALC':
-      return {
-        ...state,
-        autoCalc: action.payload,
       };
 
     default:
