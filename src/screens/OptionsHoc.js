@@ -2,7 +2,11 @@ import { compose, withHandlers } from 'recompose';
 import { Share } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { setMeasurementUnit, setAutoFocusInput } from '../store/actions';
+import {
+  setMeasurementUnit,
+  setAutoFocusInput,
+  setCurrentLocale,
+} from '../store/actions';
 
 //components
 import Options from './Options';
@@ -15,9 +19,14 @@ const withReduxConnect = connect(
   state => ({
     selectedUnit: state.app.measurementUnit,
     autoFocusInput: state.settings.autoFocusInput,
+    appLocales: state.settings.appLocales,
+    locale: state.settings.currentLocale,
   }),
   dispatch =>
-    bindActionCreators({ setMeasurementUnit, setAutoFocusInput }, dispatch),
+    bindActionCreators(
+      { setMeasurementUnit, setAutoFocusInput, setCurrentLocale },
+      dispatch,
+    ),
 );
 
 const withOptionsHandlers = withHandlers({
@@ -28,13 +37,16 @@ const withOptionsHandlers = withHandlers({
   toggleAutoFocus: ({ setAutoFocusInput, autoFocusInput }) => () => {
     setAutoFocusInput(!autoFocusInput);
   },
-  shareApp: () => async () => {
+  setLocale: ({ setCurrentLocale }) => locale => {
+    setCurrentLocale(locale);
+  },
+  shareApp: ({ locale }) => async () => {
     try {
       const content = {
-        message: I18n.t('shareMessage'),
+        message: I18n.t('shareMessage', { locale }),
       };
       const options = {
-        dialogTitle: I18n.t('shareTitle'),
+        dialogTitle: I18n.t('shareTitle', { locale }),
       };
       await Share.share(content, options);
     } catch (e) {

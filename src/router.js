@@ -25,9 +25,9 @@ const BeautifulGasOilMeter = StackNavigator(
     },
     Options: {
       screen: Options,
-      navigationOptions: {
+      navigationOptions: () => ({
         title: I18n.t('options'),
-      },
+      }),
     },
   },
   {

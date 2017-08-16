@@ -7,14 +7,14 @@ import { GlobalStyles, Constants } from '../assets';
 import { getUnit } from '../helpers';
 import I18n from '../i18n';
 
-const Result = ({ result }) =>
+const Result = ({ result, locale }) =>
   <View style={[GlobalStyles.materialCard, GlobalStyles.centerAligned]}>
     <View>
       <Text
         selectable
         style={[GlobalStyles.body, GlobalStyles.textCenterAligned]}
       >
-        {I18n.t('youNeedAdd')}
+        {I18n.t('youNeedAdd', { locale })}
       </Text>
       <View>
         <Text
@@ -38,7 +38,7 @@ const Result = ({ result }) =>
         selectable
         style={[GlobalStyles.body, GlobalStyles.textCenterAligned]}
       >
-        {I18n.t('ofOilToGasoline')}
+        {I18n.t('ofOilToGasoline', { locale })}
       </Text>
     </View>
   </View>;

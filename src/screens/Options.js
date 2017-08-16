@@ -6,7 +6,11 @@ import { GlobalStyles, Constants } from '../assets';
 import I18n from '../i18n';
 
 //components
-import { AutoFocusSwitch } from '../components';
+import {
+  AutoFocusSwitch,
+  AppLocalesPicker,
+  AppUnitsPicker,
+} from '../components';
 
 const Options = ({
   setUnit,
@@ -14,30 +18,32 @@ const Options = ({
   shareApp,
   autoFocusInput,
   toggleAutoFocus,
+  appLocales,
+  setLocale,
+  locale,
 }) =>
   <View style={[GlobalStyles.flex1, GlobalStyles.marginTopSml]}>
     <View style={GlobalStyles.materialCard}>
-      <Text style={GlobalStyles.subheading}>
-        {I18n.t('unitsOfMeasurement')}
-      </Text>
-      <Picker
-        mode={'dropdown'}
-        selectedValue={selectedUnit}
-        onValueChange={value => setUnit(value)}
-      >
-        <Picker.Item label={I18n.t('litersUnit')} value="liters" />
-        <Picker.Item label={I18n.t('usGallons')} value="us" />
-        <Picker.Item label={I18n.t('imperialGallons')} value="imperial" />
-      </Picker>
+      <AppUnitsPicker
+        setUnit={setUnit}
+        selectedUnit={selectedUnit}
+        locale={locale}
+      />
+      <AppLocalesPicker
+        appLocales={appLocales}
+        locale={locale}
+        setLocale={setLocale}
+      />
       <AutoFocusSwitch
         autoFocusInput={autoFocusInput}
         toggleAutoFocus={toggleAutoFocus}
+        locale={locale}
       />
     </View>
     <View style={GlobalStyles.materialCard}>
       <Button
         onPress={() => shareApp()}
-        title={I18n.t('shareApp')}
+        title={I18n.t('shareApp', { locale })}
         color={Constants.PRIMARY_COLOR}
       />
     </View>

@@ -25,6 +25,7 @@ const texts = {
   instructions: 'Instructies',
   autoFocusingOn: 'De aansturing van benzine in het begin is AAN.',
   autoFocusingOff: 'De aansturing van benzine in het begin is UITGESCHAKELD.',
+  language: 'Taal',
 };
 
 const units = {

@@ -17,28 +17,28 @@ const textLink = [
   GlobalStyles.link,
 ];
 
-const RatioInfo = ({ setOilValue }) =>
+const RatioInfo = ({ setOilValue, locale }) =>
   <View style={[GlobalStyles.materialCard, GlobalStyles.flex1]}>
     <Text
       selectable
       style={[GlobalStyles.body, { color: Constants.SECONDARY_COLOR }]}
     >
-      {I18n.t('instructions')}
+      {I18n.t('instructions',{ locale })}
     </Text>
     <Text selectable style={textStyle}>
-      {I18n.t('firstHoursRecomendation')}
+      {I18n.t('firstHoursRecomendation',{ locale })}
       <Text style={textLink} onPress={() => setOilValue('25')}>
         1:25
       </Text>
     </Text>
     <Text selectable style={textStyle}>
-      {I18n.t('afterRecomendation')}
+      {I18n.t('afterRecomendation',{ locale })}
       <Text style={textLink} onPress={() => setOilValue('50')}>
         1:50
       </Text>
     </Text>
     <Text selectable style={[...textStyle, { fontWeight: '500' }]}>
-      {I18n.t('readManual')}
+      {I18n.t('readManual',{ locale })}
     </Text>
   </View>;
 

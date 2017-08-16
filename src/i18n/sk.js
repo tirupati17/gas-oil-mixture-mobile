@@ -25,6 +25,7 @@ const texts = {
   instructions: 'Inštrukcie',
   autoFocusingOn: 'Zaostrenie pola Benzínu je pri štarte ZAPNUTÉ',
   autoFocusingOff: 'Zaostrenie pola Benzínu je pri štarte VYPNUTÉ',
+  language: 'Jazyk',
 };
 
 const units = {

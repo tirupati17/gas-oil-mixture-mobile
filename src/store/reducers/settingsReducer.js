@@ -1,5 +1,9 @@
+import I18n from '../../i18n';
+
 const initialState = {
   autoFocusInput: true,
+  appLocales: [I18n.currentLocale()],
+  currentLocale: I18n.currentLocale(),
 };
 
 export default (state = initialState, action) => {
@@ -8,6 +12,16 @@ export default (state = initialState, action) => {
       return {
         ...state,
         autoFocusInput: action.payload,
+      };
+    case 'SET_LOCALES':
+      return {
+        ...state,
+        appLocales: action.payload,
+      };
+    case 'SET_CURRENT_LOCALE':
+      return {
+        ...state,
+        currentLocale: action.payload,
       };
     default:
       return state;

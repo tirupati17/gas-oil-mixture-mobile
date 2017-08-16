@@ -28,9 +28,21 @@ export const setResult = payload => ({
 //SETTINGS PERSISETD ACTIONS
 
 export const SET_AUTO_FOCUS_INPUT = 'SET_AUTO_FOCUS_INPUT';
+export const SET_LOCALES = 'SET_LOCALES';
+export const SET_CURRENT_LOCALE = 'SET_CURRENT_LOCALE';
 
 export const setAutoFocusInput = payload => ({
   type: SET_AUTO_FOCUS_INPUT,
+  payload,
+});
+
+export const setLocales = payload => ({
+  type: SET_LOCALES,
+  payload,
+});
+
+export const setCurrentLocale = payload => ({
+  type: SET_CURRENT_LOCALE,
   payload,
 });
 

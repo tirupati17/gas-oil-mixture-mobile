@@ -25,6 +25,7 @@ const texts = {
   instructions: 'Instructions',
   autoFocusingOn: 'Focusing Gas input at start is ON.',
   autoFocusingOff: 'Focusing Gas input at start is OFF.',
+  language: 'Language',
 };
 
 const units = {

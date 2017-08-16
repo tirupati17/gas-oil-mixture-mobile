@@ -27,6 +27,7 @@ const Calculator = ({
   inputWidth,
   calculateResult,
   autoFocusInput,
+  locale,
 }) =>
   <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
     <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
@@ -49,7 +50,7 @@ const Calculator = ({
             <Text
               style={[GlobalStyles.subheading, GlobalStyles.paddingLeftSml]}
             >
-              {I18n.t('amountOfFuel')}
+              {I18n.t('amountOfFuel', { locale })}
             </Text>
           </View>
           <View style={[GlobalStyles.row, GlobalStyles.middleAligned]}>
@@ -97,7 +98,7 @@ const Calculator = ({
             <Text
               style={[GlobalStyles.subheading, GlobalStyles.paddingLeftSml]}
             >
-              {I18n.t('oilMixRatio')}
+              {I18n.t('oilMixRatio', { locale })}
             </Text>
           </View>
           <View style={[GlobalStyles.row, GlobalStyles.middleAligned]}>
@@ -124,8 +125,8 @@ const Calculator = ({
           </View>
         </View>
       </View>
-      <Result result={result} />
-      <RatioInfo setOilValue={setOilValue} />
+      <Result result={result} locale={locale} />
+      <RatioInfo setOilValue={setOilValue} locale={locale} />
     </KeyboardAvoidingView>
   </ScrollView>;
 

@@ -25,6 +25,7 @@ const texts = {
   instructions: 'Instructions',
   autoFocusingOn: 'Focusing Petrol input in start is ON.',
   autoFocusingOff: 'Focusing Petrol input in start is OFF.',
+  language: 'Language',
 };
 
 const units = {

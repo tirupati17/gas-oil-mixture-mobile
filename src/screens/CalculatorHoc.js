@@ -17,6 +17,7 @@ const withReduxConnect = connect(
     result: state.app.result,
     measurementUnit: state.app.measurementUnit,
     autoFocusInput: state.settings.autoFocusInput,
+    locale: state.settings.currentLocale,
   }),
   dispatch => bindActionCreators({ setGasValue, setOilValue }, dispatch),
 );
