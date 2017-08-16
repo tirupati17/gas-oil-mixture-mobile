@@ -16,5 +16,5 @@ The application calculate the gas/oil mix ratio for 2T engines.
 - Use any gas/oil mix ratio
 - Settings
 
-#Google Play
+# Google Play
 https://play.google.com/store/apps/details?id=com.filippofilip.oilratiocalc
