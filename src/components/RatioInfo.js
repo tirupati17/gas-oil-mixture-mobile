@@ -8,7 +8,7 @@ import I18n from '../i18n';
 const textStyle = [
   GlobalStyles.borderTopLine,
   GlobalStyles.paddingVerticalSml,
-  GlobalStyles.body,
+  GlobalStyles.body2,
   { fontSize: 15 },
 ];
 
@@ -21,7 +21,7 @@ const RatioInfo = ({ setOilValue, locale }) =>
   <View style={[GlobalStyles.materialCard, GlobalStyles.flex1]}>
     <Text
       selectable
-      style={[GlobalStyles.body, { color: Constants.SECONDARY_COLOR }]}
+      style={[GlobalStyles.body2, { color: Constants.SECONDARY_COLOR }]}
     >
       {I18n.t('instructions',{ locale })}
     </Text>

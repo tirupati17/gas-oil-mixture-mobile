@@ -14,7 +14,7 @@ const AppLocalesPicker = ({ appLocales, locale, setLocale }) => {
         </Text>
         <Picker
           mode={'dropdown'}
-          selectedValue={locale}ƒ
+          selectedValue={locale}
           onValueChange={value => setLocale(value)}
         >
           {appLocales.map(locale =>

@@ -53,6 +53,20 @@ export default StyleSheet.create({
     color: Constants.TEXT_COLOR,
     fontWeight: '300',
   },
+  body2: {
+    ...Platform.select({
+      ios: {
+        fontFamily: 'HelveticaNeue',
+      },
+      android: {
+        fontFamily: 'Roboto',
+      },
+    }),
+    fontSize: 14,
+    color: Constants.TEXT_COLOR,
+    fontWeight: '300',
+    opacity: 0.87,
+  },
   subheading: {
     ...Platform.select({
       ios: {
