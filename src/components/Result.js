@@ -21,7 +21,7 @@ const Result = ({ result, locale }) =>
           selectable
           style={[GlobalStyles.title, GlobalStyles.textCenterAligned]}
         >
-          {`${result} ${getUnit().smallShort}`}
+          {`${result.toLocaleString(locale)} ${getUnit().smallShort}`}
         </Text>
         <Icon
           name={'format-color-fill'}
