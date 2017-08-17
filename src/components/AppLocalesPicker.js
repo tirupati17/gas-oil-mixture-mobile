@@ -17,8 +17,12 @@ const AppLocalesPicker = ({ appLocales, locale, setLocale }) => {
           selectedValue={locale}
           onValueChange={value => setLocale(value)}
         >
-          {appLocales.map(locale =>
-            <Picker.Item label={locale} value={locale} key={locale} />,
+          {appLocales.map(item =>
+            <Picker.Item
+              label={I18n.t(item, { locale })}
+              value={item}
+              key={item + Math.random()}
+            />,
           )}
         </Picker>
       </View>

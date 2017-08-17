@@ -39,7 +39,15 @@ const units = {
   oz: 'oz.',
 };
 
+const states = {
+  sk: 'Slowaaks',
+  'nl-NL': 'Nederlands',
+  en: 'Engels (US)',
+  'en-GB': 'Engels (UK)',
+};
+
 export default {
   ...texts,
   ...units,
+  ...states,
 };
