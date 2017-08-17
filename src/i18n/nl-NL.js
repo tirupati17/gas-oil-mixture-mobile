@@ -1,6 +1,6 @@
 import { Constants } from '../assets';
 
-//GERMAN
+//DUTCH
 
 const texts = {
   oilRatioCalculator: 'Benzine/Oil Calculator',
@@ -44,6 +44,7 @@ const states = {
   'nl-NL': 'Nederlands',
   en: 'Engels (US)',
   'en-GB': 'Engels (UK)',
+  de: 'Duits',
 };
 
 export default {

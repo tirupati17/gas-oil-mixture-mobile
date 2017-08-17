@@ -44,6 +44,7 @@ const states = {
   'nl-NL': 'Dutch ',
   en: 'English (US) ',
   'en-GB': 'English (UK) ',
+  de: 'German ',
 };
 
 export default {

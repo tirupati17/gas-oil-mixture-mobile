@@ -3,6 +3,7 @@ import sk from './sk';
 import en from './en';
 import en_GB from './en-GB';
 import nl_NL from './nl-NL';
+import de from './de';
 
 I18n.fallbacks = true;
 I18n.defaultLocale = 'en-EN';
@@ -10,6 +11,7 @@ I18n.defaultLocale = 'en-EN';
 I18n.translations = {
   sk,
   en,
+  de,
   'nl-NL': nl_NL,
   'en-GB': en_GB,
 };

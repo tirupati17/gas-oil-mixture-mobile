@@ -9,11 +9,11 @@ const textStyle = [
   GlobalStyles.borderTopLine,
   GlobalStyles.paddingVerticalSml,
   GlobalStyles.body2,
-  { fontSize: 15 },
+  { fontSize: 14 },
 ];
 
 const textLink = [
-  { fontSize: 15, textDecorationLine: 'underline' },
+  { fontSize: 14, textDecorationLine: 'underline' },
   GlobalStyles.link,
 ];
 
@@ -23,22 +23,22 @@ const RatioInfo = ({ setOilValue, locale }) =>
       selectable
       style={[GlobalStyles.body2, { color: Constants.SECONDARY_COLOR }]}
     >
-      {I18n.t('instructions',{ locale })}
+      {I18n.t('instructions', { locale })}
     </Text>
     <Text selectable style={textStyle}>
-      {I18n.t('firstHoursRecomendation',{ locale })}
+      {I18n.t('firstHoursRecomendation', { locale })}
       <Text style={textLink} onPress={() => setOilValue('25')}>
         1:25
       </Text>
     </Text>
     <Text selectable style={textStyle}>
-      {I18n.t('afterRecomendation',{ locale })}
+      {I18n.t('afterRecomendation', { locale })}
       <Text style={textLink} onPress={() => setOilValue('50')}>
         1:50
       </Text>
     </Text>
     <Text selectable style={[...textStyle, { fontWeight: '500' }]}>
-      {I18n.t('readManual',{ locale })}
+      {I18n.t('readManual', { locale })}
     </Text>
   </View>;
 

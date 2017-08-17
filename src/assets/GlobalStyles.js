@@ -76,7 +76,7 @@ export default StyleSheet.create({
         fontFamily: 'Roboto',
       },
     }),
-    fontSize: 20,
+    fontSize: 17,
     color: Constants.TEXT_COLOR,
   },
   title: {
