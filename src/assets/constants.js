@@ -4,6 +4,7 @@ const Colors = {
   SECONDARY_COLOR: '#9DA3A4',
   WHITE: '#FFF',
   BLACK: '#000',
+  BORDER: '#D3D0CB',
 };
 
 const Values = {

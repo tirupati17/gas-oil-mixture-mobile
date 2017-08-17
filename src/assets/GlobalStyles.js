@@ -211,11 +211,11 @@ export default StyleSheet.create({
   },
   borderBottomLine: {
     borderBottomWidth: 1,
-    borderBottomColor: Constants.SECONDARY_COLOR,
+    borderBottomColor: Constants.BORDER,
   },
   borderTopLine: {
     borderTopWidth: 1,
-    borderTopColor: Constants.SECONDARY_COLOR,
+    borderTopColor: Constants.BORDER,
   },
 
   // Grid
