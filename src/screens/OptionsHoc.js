@@ -1,4 +1,4 @@
-import { compose, withHandlers } from 'recompose';
+import { compose, withHandlers, lifecycle } from 'recompose';
 import { Share } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -12,7 +12,7 @@ import {
 import Options from './Options';
 
 //helpers
-import { getResult } from '../helpers';
+import { getResult, getLocales } from '../helpers';
 import I18n from '../i18n';
 
 const withReduxConnect = connect(
@@ -55,4 +55,12 @@ const withOptionsHandlers = withHandlers({
   },
 });
 
-export default compose(withReduxConnect, withOptionsHandlers)(Options);
+const withLifecycle = lifecycle({
+  componentWillMount() {
+    getLocales();
+  },
+});
+
+export default compose(withReduxConnect, withLifecycle, withOptionsHandlers)(
+  Options,
+);
