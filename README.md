@@ -8,6 +8,13 @@ The application calculate the gas/oil mix ratio for 2T engines.
 # Features
 - Nice modern design
 - Automatic calculation
+- Dosing information
+- Storing the last entered values
+- Changing the language
 - Choose default units: Metric, US or Imperial (UK)
 - Automatic calculation between units
 - Use any gas/oil mix ratio
+- Settings
+
+# Google Play
+https://play.google.com/store/apps/details?id=com.filippofilip.oilratiocalc
