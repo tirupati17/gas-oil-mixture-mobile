@@ -16,6 +16,7 @@ const Options = ({
   setUnit,
   selectedUnit,
   shareApp,
+  rateApp,
   autoFocusInput,
   toggleAutoFocus,
   appLocales,
@@ -46,6 +47,13 @@ const Options = ({
         title={I18n.t('shareApp', { locale })}
         color={Constants.PRIMARY_COLOR}
       />
+      <View style={GlobalStyles.paddingTop}>
+        <Button
+          onPress={() => rateApp()}
+          title={I18n.t('rateApp', { locale })}
+          color={Constants.PRIMARY_COLOR}
+        />
+      </View>
     </View>
   </View>;
 

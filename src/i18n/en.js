@@ -26,6 +26,7 @@ const texts = {
   autoFocusingOn: 'Focusing Gas input at start is ON.',
   autoFocusingOff: 'Focusing Gas input at start is OFF.',
   language: 'Language',
+  rateApp: 'Rate App',
 };
 
 const units = {
@@ -41,10 +42,15 @@ const units = {
 
 const states = {
   sk: 'Slovak',
-  'nl-NL': 'Dutch ',
+  nl: 'Dutch ',
   en: 'English (US) ',
   'en-GB': 'English (UK) ',
   de: 'German ',
+  cs: 'Czech ',
+  ru: 'Russian',
+  pl: 'Polish ',
+    zh: 'Chinese ',
+
 };
 
 export default {

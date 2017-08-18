@@ -26,6 +26,7 @@ const texts = {
   autoFocusingOn: 'Focusing Petrol input in start is ON.',
   autoFocusingOff: 'Focusing Petrol input in start is OFF.',
   language: 'Language',
+  rateApp: 'Rate App',
 };
 
 const units = {
@@ -41,10 +42,15 @@ const units = {
 
 const states = {
   sk: 'Slovak',
-  'nl-NL': 'Dutch',
+  nl: 'Dutch',
   en: 'English (US)',
   'en-GB': 'English (UK)',
-  de: 'Deutsche',
+  de: 'German',
+  cs: 'Czech ',
+  ru: 'Russian',
+  pl: 'Polish ',
+    zh: 'Chinese',
+
 };
 
 export default {

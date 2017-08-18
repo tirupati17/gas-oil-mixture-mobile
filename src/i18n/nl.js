@@ -26,6 +26,7 @@ const texts = {
   autoFocusingOn: 'De aansturing van benzine in het begin is AAN.',
   autoFocusingOff: 'De aansturing van benzine in het begin is UITGESCHAKELD.',
   language: 'Taal',
+  rateApp: 'Beoordeel App',
 };
 
 const units = {
@@ -41,10 +42,14 @@ const units = {
 
 const states = {
   sk: 'Slowaaks',
-  'nl-NL': 'Nederlands',
+  nl: 'Nederlands',
   en: 'Engels (US)',
   'en-GB': 'Engels (UK)',
   de: 'Duits',
+  cs: 'Tsjechisch',
+  ru: 'Russisch',
+  pl: 'Pools',
+  zh: 'Chinese',
 };
 
 export default {

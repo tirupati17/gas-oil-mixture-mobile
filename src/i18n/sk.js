@@ -26,6 +26,7 @@ const texts = {
   autoFocusingOn: 'Zaostrenie pola Benzínu je pri štarte ZAPNUTÉ',
   autoFocusingOff: 'Zaostrenie pola Benzínu je pri štarte VYPNUTÉ',
   language: 'Jazyk',
+  rateApp: 'Ohodnoť aplikáciu',
 };
 
 const units = {
@@ -41,10 +42,14 @@ const units = {
 
 const states = {
   sk: 'Slovenský',
-  'nl-NL': 'Holandský',
+  nl: 'Holandský',
   en: 'Anglický (US)',
   'en-GB': 'Anglický (UK)',
   de: 'Nemecký',
+  cs: 'Česky',
+  ru: 'Rusky',
+  pl: 'Polsky',
+  zh: 'Čínsky',
 };
 
 export default {

@@ -26,6 +26,7 @@ const texts = {
   autoFocusingOn: 'Fokussierung Benzin-Eingang im Start ist EIN.',
   autoFocusingOff: 'Fokussierung Benzin-Eingang im Start ist OFF.',
   language: 'Sprache',
+  rateApp: 'Bewertungs App',
 };
 
 const units = {
@@ -41,10 +42,14 @@ const units = {
 
 const states = {
   sk: 'Slowakisch',
-  'nl-NL': 'Niederländisch',
+  nl: 'Niederländisch',
   en: 'Englisch (US)',
   'en-GB': 'Englisch (UK)',
   de: 'Deutsche',
+  cs: 'Tschechisch',
+  ru: 'Russisch',
+  pl: 'Polieren',
+  zh: 'Chinesisch',
 };
 
 export default {
