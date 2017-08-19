@@ -26,6 +26,8 @@ const texts = {
   autoFocusing: 'Auto Focus Wejście benzyny na początku.',
   language: 'Język',
   rateApp: 'Oceń aplikację',
+  contactMe:
+    'Czy chcesz mi pomóc w tłumaczeniu aplikacji lub uzyskać wskazówki dotyczące ulepszeń? Zapraszam do kontaktu ze mną w ',
 };
 
 const units = {

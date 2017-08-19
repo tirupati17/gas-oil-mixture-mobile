@@ -15,6 +15,7 @@ const Values = {
 const Urls = {
   GOOGLE_PLAY_LINK:
     'https://play.google.com/store/apps/details?id=com.filippofilip.oilratiocalc',
+  DEVELOPER_EMAIL: 'filippofilipapps@gmail.com',
 };
 
 export default { ...Colors, ...Values, ...Urls };

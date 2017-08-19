@@ -23,6 +23,7 @@ const texts = {
   autoFocusing: '自动对焦汽油输入开始',
   language: '语言',
   rateApp: '评价应用',
+  contactMe: '你想帮助我翻译应用程序，还是有一些改进提示？ 随时与我联系 ',
 };
 
 const units = {

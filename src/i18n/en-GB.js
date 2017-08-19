@@ -26,6 +26,8 @@ const texts = {
   autoFocusing: 'Auto focus Petrol input in start.',
   language: 'Language',
   rateApp: 'Rate App',
+  contactMe:
+    'Do you want help me with translation of app or have some tips for improvements? Feel free to contact me at ',
 };
 
 const units = {
@@ -48,8 +50,7 @@ const states = {
   cs: 'Czech ',
   ru: 'Russian',
   pl: 'Polish ',
-    zh: 'Chinese',
-
+  zh: 'Chinese',
 };
 
 export default {

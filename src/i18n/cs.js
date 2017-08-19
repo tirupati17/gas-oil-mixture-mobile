@@ -26,6 +26,8 @@ const texts = {
   autoFocusing: 'Automatické zaostření Benzínový vstupu při startu',
   language: 'Jazyk',
   rateApp: 'Ohodnoťte Aplikaci',
+  contactMe:
+    'Chcete mi pomoci s překladem aplikace nebo máte nějaké tipy na zlepšení? Neváhejte a kontaktujte mě na adrese ',
 };
 
 const units = {

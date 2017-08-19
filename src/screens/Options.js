@@ -10,6 +10,7 @@ import {
   AutoFocusSwitch,
   AppLocalesPicker,
   AppUnitsPicker,
+  Contact,
 } from '../components';
 
 const Options = ({
@@ -55,6 +56,7 @@ const Options = ({
         />
       </View>
     </View>
+    <Contact locale={locale} />
   </View>;
 
 export default Options;

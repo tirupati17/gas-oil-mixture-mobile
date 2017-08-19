@@ -26,6 +26,8 @@ const texts = {
   autoFocusing: 'Auto Focus Benzine ingang in start.',
   language: 'Taal',
   rateApp: 'Beoordeel App',
+  contactMe:
+    'Wil je mij helpen bij de vertaling van een app of wat tips voor verbeteringen? Neem gerust contact met mij op ',
 };
 
 const units = {

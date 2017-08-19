@@ -5,6 +5,7 @@ import AutoFocusSwitch from './AutoFocusSwitch';
 import AppLocalesPicker from './AppLocalesPicker';
 import AppUnitsPicker from './AppUnitsPicker';
 import ValueInput from './ValueInput';
+import Contact from './Contact';
 
 export {
   RatioInfo,
@@ -14,4 +15,5 @@ export {
   AppLocalesPicker,
   AppUnitsPicker,
   ValueInput,
+  Contact,
 };
