@@ -24,7 +24,7 @@ const Result = ({ result, locale }) =>
           {`${I18n.toNumber(result, {
             precision: 0,
             delimiter: ' ',
-          })} ${getUnit().smallShort}`}
+          })} ${getUnit(locale).smallShort}`}
         </Text>
         <Icon
           name={'format-color-fill'}

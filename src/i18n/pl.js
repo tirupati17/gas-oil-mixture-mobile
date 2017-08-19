@@ -23,10 +23,7 @@ const texts = {
   readManual:
     'Przeczytaj instrukcję dotyczącą silnika, stosunki mogą się różnić od wymienionych zaleceń.',
   instructions: 'Instrukcje',
-  autoFocusingOn:
-    'Ustawianie ostrości na wejściu benzyny w czasie startu jest włączone.',
-  autoFocusingOff:
-    'Ustawianie ostrości na wejściu benzyny podczas startu jest wyłączone.',
+  autoFocusing: 'Auto Focus Wejście benzyny na początku.',
   language: 'Język',
   rateApp: 'Oceń aplikację',
 };

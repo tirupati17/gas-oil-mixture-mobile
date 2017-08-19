@@ -23,8 +23,7 @@ const texts = {
   readManual:
     'Lees alstublieft uw handleiding voor uw motor, de verhoudingen kunnen verschillen van de aanbevolen aanbevelingen.',
   instructions: 'Instructies',
-  autoFocusingOn: 'De aansturing van benzine in het begin is AAN.',
-  autoFocusingOff: 'De aansturing van benzine in het begin is UITGESCHAKELD.',
+  autoFocusing: 'Auto Focus Benzine ingang in start.',
   language: 'Taal',
   rateApp: 'Beoordeel App',
 };

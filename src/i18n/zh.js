@@ -20,8 +20,7 @@ const texts = {
   afterRecomendation: '运行前10个营业时间后，汽油/石油所需混合比 ',
   readManual: '请阅读您的发动机的手册，比率可能与列出的建议不同。',
   instructions: '说明',
-  autoFocusingOn: '启动时聚焦汽油输入开启',
-  autoFocusingOff: '启动时聚焦汽油输入关闭',
+  autoFocusing: '自动对焦汽油输入开始',
   language: '语言',
   rateApp: '评价应用',
 };

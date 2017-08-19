@@ -23,8 +23,7 @@ const texts = {
   readManual:
     'Přečtěte si prosím vaši příručku k motoru, poměry se mohou lišit od uvedených doporučení.',
   instructions: 'Pokyny',
-  autoFocusingOn: 'Zaostřování benzínu pri startu je ZAPNUTO.',
-  autoFocusingOff: 'Zaostřování benzínu pri startu je VYPNUTO.',
+  autoFocusing: 'Automatické zaostření Benzínový vstupu při startu',
   language: 'Jazyk',
   rateApp: 'Ohodnoťte Aplikaci',
 };

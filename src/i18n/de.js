@@ -23,8 +23,7 @@ const texts = {
   readManual:
     'Bitte lesen Sie Ihr Handbuch für Ihren Motor, die Verhältnisse können von den aufgeführten Empfehlungen abweichen.',
   instructions: 'Anleitung',
-  autoFocusingOn: 'Fokussierung Benzin-Eingang im Start ist EIN.',
-  autoFocusingOff: 'Fokussierung Benzin-Eingang im Start ist OFF.',
+  autoFocusing: 'Autofokus Benzin-Eingang in Start.',
   language: 'Sprache',
   rateApp: 'Bewertungs App',
 };

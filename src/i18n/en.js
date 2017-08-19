@@ -23,8 +23,7 @@ const texts = {
   readManual:
     'Please read your manual for your engine, the ratios may differ from the listed recommendations.',
   instructions: 'Instructions',
-  autoFocusingOn: 'Focusing Gas input at start is ON.',
-  autoFocusingOff: 'Focusing Gas input at start is OFF.',
+  autoFocusing: 'Auto focus Gas input in start.',
   language: 'Language',
   rateApp: 'Rate App',
 };
@@ -49,8 +48,7 @@ const states = {
   cs: 'Czech ',
   ru: 'Russian',
   pl: 'Polish ',
-    zh: 'Chinese ',
-
+  zh: 'Chinese ',
 };
 
 export default {

@@ -23,8 +23,7 @@ const texts = {
   readManual:
     'Please read your manual for your engine, the ratios may differ from the listed recommendations.',
   instructions: 'Instructions',
-  autoFocusingOn: 'Focusing Petrol input in start is ON.',
-  autoFocusingOff: 'Focusing Petrol input in start is OFF.',
+  autoFocusing: 'Auto focus Petrol input in start.',
   language: 'Language',
   rateApp: 'Rate App',
 };
