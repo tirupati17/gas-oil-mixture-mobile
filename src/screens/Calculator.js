@@ -29,21 +29,26 @@ const Calculator = ({
           isGasInput
           icon={'local-gas-station'}
           label={I18n.t('amountOfFuel', { locale })}
-          unitLabel={getUnit().baseShort}
-          onSubmitEditing={() => secondInput.focus()}
+          unitLabel={getUnit(locale).baseShort}
           inputWidth={inputWidth.gas}
-          onChangeText={gas => setGasValue(gas)}
-          value={gasValue}
-          returnKeyType={'next'}
+          textInputProps={{
+            returnKeyType: 'next',
+            value: gasValue,
+            onChangeText: gas => setGasValue(gas),
+            onSubmitEditing: () => secondInput.focus(),
+            autoFocus: autoFocusInput,
+          }}
         />
         <ValueInput
           icon={'data-usage'}
           label={I18n.t('oilMixRatio', { locale })}
           inputWidth={inputWidth.oil}
-          onChangeText={oil => setOilValue(oil)}
-          value={oilValue}
-          returnKeyType={'done'}
-          textInputRef={input => (secondInput = input)}
+          textInputProps={{
+            returnKeyType: 'done',
+            value: oilValue,
+            onChangeText: oil => setOilValue(oil),
+            ref: input => (secondInput = input),
+          }}
         />
       </View>
       <Result result={result} locale={locale} />

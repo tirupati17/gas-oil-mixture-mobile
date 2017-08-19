@@ -8,15 +8,10 @@ import { GlobalStyles, Constants } from '../assets';
 const ValueInput = ({
   icon,
   label,
-  autoFocusInput,
   isGasInput,
-  onSubmitEditing,
   inputWidth,
-  onChangeText,
-  value,
   unitLabel,
-  returnKeyType,
-  textInputRef,
+  textInputProps,
 }) =>
   <View
     style={[
@@ -36,12 +31,7 @@ const ValueInput = ({
     <View style={[GlobalStyles.row, GlobalStyles.middleAligned]}>
       {!isGasInput && <Text style={GlobalStyles.subheading}>1:</Text>}
       <TextInput
-        ref={textInputRef}
         keyboardType={'numeric'}
-        returnKeyType={returnKeyType}
-        maxLength={10}
-        autoFocus={isGasInput ? autoFocusInput : false}
-        onSubmitEditing={onSubmitEditing}
         style={[
           GlobalStyles.subheading,
           GlobalStyles.textCenterAligned,
@@ -51,11 +41,10 @@ const ValueInput = ({
             width: inputWidth,
           },
         ]}
-        onChangeText={onChangeText}
-        value={value}
         selectTextOnFocus
         selectionColor={Constants.PRIMARY_COLOR}
         underlineColorAndroid={Constants.PRIMARY_COLOR}
+        {...textInputProps}
       />
       {isGasInput &&
         <Text style={GlobalStyles.subheading}>
