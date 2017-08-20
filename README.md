@@ -3,18 +3,15 @@
 
 # Gas/Oil mix ratio calculator
 
-The application calculate the gas/oil mix ratio for 2T engines.
+Calculate the Gas/Oil mixture ratio. Quickly, easily and without ads.
 
-# Features
-- Nice modern design
-- Automatic calculation
-- Dosing information
-- Storing the last entered values
-- Changing the language
-- Choose default units: Metric, US or Imperial (UK)
-- Automatic calculation between units
-- Use any gas/oil mix ratio
-- Settings
+App calculate the required amount of oil for proper fuel/oil mix in 2 stroke engine. 
 
-# Google Play
+
+### Google Play
 https://play.google.com/store/apps/details?id=com.filippofilip.oilratiocalc
+
+
+### App preview
+
+<div align="center"><img src="https://github.com/filippofilip95/gas-oil-ratio-calc/blob/master/previews/app.gif?raw=true" width="300"></div>
