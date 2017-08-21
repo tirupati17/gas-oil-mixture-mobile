@@ -8,7 +8,7 @@ const Colors = {
 };
 
 const Values = {
-  INITIAL_INPUT_WIDTH: 20,
+  INITIAL_NUMBER_WIDTH: 10,
   PERSISTED_REDUCERS: ['app', 'settings'],
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ScrollView, KeyboardAvoidingView } from 'react-native';
 
 //components
-import { Result, RatioInfo, ValueInput } from '../components';
+import { Result, RatioInfo, ValueInput, ShitComponent } from '../components';
 
 //helpers
 import { GlobalStyles } from '../assets';
@@ -21,6 +21,7 @@ const Calculator = ({
   calculateResult,
   autoFocusInput,
   locale,
+  setNumberWidth,
 }) =>
   <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
     <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
@@ -49,6 +50,9 @@ const Calculator = ({
             onChangeText: oil => setOilValue(oil),
             ref: input => (secondInput = input),
           }}
+        />
+        <ShitComponent
+          onLayout={item => setNumberWidth(item.nativeEvent.layout.width)}
         />
       </View>
       <Result result={result} locale={locale} />

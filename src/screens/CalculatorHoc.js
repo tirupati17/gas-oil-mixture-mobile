@@ -1,4 +1,4 @@
-import { compose, withProps, lifecycle } from 'recompose';
+import { compose, withProps, lifecycle, withState } from 'recompose';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -7,7 +7,7 @@ import Calculator from './Calculator';
 
 //helpers
 import { Constants } from '../assets';
-import { getResult } from '../helpers';
+import { getResult, handleWidth } from '../helpers';
 import { setGasValue, setOilValue } from '../store/actions';
 
 const withReduxConnect = connect(
@@ -24,8 +24,8 @@ const withReduxConnect = connect(
 
 const withAutoInputWidth = withProps(props => ({
   inputWidth: {
-    gas: Constants.INITIAL_INPUT_WIDTH + props.gasValue.length * 10,
-    oil: Constants.INITIAL_INPUT_WIDTH + props.oilValue.length * 10,
+    gas: handleWidth(props.gasValue.length, props.numberWidth),
+    oil: handleWidth(props.oilValue.length, props.numberWidth),
   },
 }));
 
@@ -38,8 +38,15 @@ const withFirstCalculation = lifecycle({
   },
 });
 
+const measureNumberWidth = withState(
+  'numberWidth',
+  'setNumberWidth',
+  Constants.INITIAL_NUMBER_WIDTH,
+);
+
 export default compose(
   withReduxConnect,
+  measureNumberWidth,
   withAutoInputWidth,
   withFirstCalculation,
 )(Calculator);

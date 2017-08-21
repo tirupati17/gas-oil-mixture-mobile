@@ -6,6 +6,7 @@ import AppLocalesPicker from './AppLocalesPicker';
 import AppUnitsPicker from './AppUnitsPicker';
 import ValueInput from './ValueInput';
 import Contact from './Contact';
+import ShitComponent from './ShitComponent';
 
 export {
   RatioInfo,
@@ -16,4 +17,5 @@ export {
   AppUnitsPicker,
   ValueInput,
   Contact,
+  ShitComponent,
 };
