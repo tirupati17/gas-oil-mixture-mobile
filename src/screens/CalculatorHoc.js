@@ -1,6 +1,13 @@
-import { compose, withProps, lifecycle, withState } from 'recompose';
+import {
+  compose,
+  withProps,
+  lifecycle,
+  withState,
+  withHandlers,
+} from 'recompose';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { connectActionSheet } from 'react-native-action-sheet-fork';
 
 //componenets
 import Calculator from './Calculator';
@@ -8,7 +15,8 @@ import Calculator from './Calculator';
 //helpers
 import { Constants } from '../assets';
 import { getResult, handleWidth } from '../helpers';
-import { setGasValue, setOilValue } from '../store/actions';
+import { setGasValue, setOilValue, setMeasurementUnit } from '../store/actions';
+import I18n from '../i18n';
 
 const withReduxConnect = connect(
   state => ({
@@ -19,7 +27,11 @@ const withReduxConnect = connect(
     autoFocusInput: state.settings.autoFocusInput,
     locale: state.settings.currentLocale,
   }),
-  dispatch => bindActionCreators({ setGasValue, setOilValue }, dispatch),
+  dispatch =>
+    bindActionCreators(
+      { setGasValue, setOilValue, setMeasurementUnit },
+      dispatch,
+    ),
 );
 
 const withAutoInputWidth = withProps(props => ({
@@ -41,9 +53,47 @@ const measureNumberWidth = withState(
   Constants.INITIAL_NUMBER_WIDTH,
 );
 
+const withCalculatorHandlers = withHandlers({
+  openUnitsOptions: ({
+    showActionSheetWithOptions,
+    setMeasurementUnit,
+    locale,
+  }) => () => {
+    const options = [
+      I18n.t('litersUnit', { locale }),
+      I18n.t('usGallons', { locale }),
+      I18n.t('imperialGallons', { locale }),
+      I18n.t('cancel', { locale }),
+    ];
+    const cancelButtonIndex = 3;
+
+    showActionSheetWithOptions(
+      {
+        options,
+        cancelButtonIndex,
+      },
+      buttonIndex => {
+        switch (buttonIndex) {
+          case 0:
+            setMeasurementUnit('liters');
+            break;
+          case 1:
+            setMeasurementUnit('us');
+            break;
+          case 2:
+            setMeasurementUnit('imperial');
+            break;
+        }
+      },
+    );
+  },
+});
+
 export default compose(
   withReduxConnect,
+  connectActionSheet,
   measureNumberWidth,
   withAutoInputWidth,
   withFirstCalculation,
+  withCalculatorHandlers,
 )(Calculator);

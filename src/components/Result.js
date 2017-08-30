@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import TouchableItem from 'react-navigation/lib-rn/views/TouchableItem';
 
 //helpers
@@ -46,11 +46,11 @@ const Result = ({ resultString, locale, openOptions }) =>
       borderless
       style={{
         position: 'absolute',
-        right: 0,
-        top: 5,
+        right: 2,
+        top: 2,
       }}
     >
-      <Icon name={'dots-vertical'} color={Constants.BORDER} size={25} />
+      <Icon name={'expand-more'} color={Constants.BORDER} size={25} />
     </TouchableItem>
   </View>;
 

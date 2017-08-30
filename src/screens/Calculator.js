@@ -1,11 +1,13 @@
 import React from 'react';
 import { View, ScrollView, KeyboardAvoidingView } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import TouchableItem from 'react-navigation/lib-rn/views/TouchableItem';
 
 //components
 import { Result, RatioInfo, ValueInput, ShitComponent } from '../components';
 
 //helpers
-import { GlobalStyles } from '../assets';
+import { GlobalStyles, Constants } from '../assets';
 import { getUnit } from '../helpers';
 import I18n from '../i18n';
 
@@ -21,6 +23,7 @@ const Calculator = ({
   autoFocusInput,
   locale,
   setNumberWidth,
+  openUnitsOptions,
 }) =>
   <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
     <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
@@ -53,6 +56,17 @@ const Calculator = ({
         <ShitComponent
           onLayout={item => setNumberWidth(item.nativeEvent.layout.width)}
         />
+        <TouchableItem
+          onPress={() => openUnitsOptions()}
+          borderless
+          style={{
+            position: 'absolute',
+            right: 2,
+            top: 2,
+          }}
+        >
+          <Icon name={'expand-more'} color={Constants.BORDER} size={25} />
+        </TouchableItem>
       </View>
       <Result />
       <RatioInfo setOilValue={setOilValue} locale={locale} />
