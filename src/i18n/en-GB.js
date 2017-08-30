@@ -28,6 +28,10 @@ const texts = {
   rateApp: 'Rate App',
   contactMe:
     'Do you want help me with translation of app or have some tips for improvements? Feel free to contact me at ',
+  shareResult:
+    'You need add the {{resultString}} of oil to {{resultGasValue}} of petrol, in the ratio {{resultRatio}}.',
+  share: 'Share',
+  cancel: 'Cancel',
 };
 
 const units = {

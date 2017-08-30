@@ -1,5 +1,5 @@
 import RatioInfo from './RatioInfo';
-import Result from './Result';
+import Result from './ResultHoc';
 import OptionsButton from './OptionsButton';
 import AutoFocusSwitch from './AutoFocusSwitch';
 import AppLocalesPicker from './AppLocalesPicker';

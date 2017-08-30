@@ -28,6 +28,10 @@ const texts = {
   rateApp: 'Ohodnoť aplikáciu',
   contactMe:
     'Chcete pomôcť s prekladom aplikácie alebo máte nejaké tipy na zlepšenie? Neváhajte a kontaktujte ma na ',
+  shareResult:
+    'Potrebuješ pridať {{resultString}} oleja do {{resultGasValue}} benzínu, v pomere {{resultRatio}}.',
+  share: 'Zdielať',
+  cancel: 'Zavrieť',
 };
 
 const units = {

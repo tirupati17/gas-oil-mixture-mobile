@@ -30,9 +30,6 @@ const withAutoInputWidth = withProps(props => ({
 }));
 
 const withFirstCalculation = lifecycle({
-  componentWillMount() {
-    getResult();
-  },
   componentWillReceiveProps() {
     getResult();
   },

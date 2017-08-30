@@ -7,7 +7,7 @@ const texts = {
   options: 'Opcje',
   amountOfFuel: 'Ilość benzyny:',
   oilMixRatio: 'Wskaźnik stosunku oleju:',
-  youNeedAdd: '"Musisz dodać',
+  youNeedAdd: 'Musisz dodać',
   ofOilToGasoline: 'oleju na benzynę.',
   unitsOfMeasurement: 'Jednostki miary',
   litersUnit: 'Litery',
@@ -28,6 +28,10 @@ const texts = {
   rateApp: 'Oceń aplikację',
   contactMe:
     'Czy chcesz mi pomóc w tłumaczeniu aplikacji lub uzyskać wskazówki dotyczące ulepszeń? Zapraszam do kontaktu ze mną w ',
+  shareResult:
+    'Musisz dodać {{resultString}} oleju do {{resultGasValue}} benzyny, w stosunku {{resultRatio}}.',
+  share: 'Dzielić',
+  cancel: 'Anuluj',
 };
 
 const units = {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
+import { ActionSheetProvider } from 'react-native-action-sheet-fork';
 
 //helpers
 import { Constants } from './assets';
@@ -12,7 +13,7 @@ import Options from './screens/OptionsHoc';
 //Components
 import { OptionsButton } from './components';
 
-const BeautifulGasOilMeter = StackNavigator(
+const Stack = StackNavigator(
   {
     Calculator: {
       screen: Calculator,
@@ -39,5 +40,10 @@ const BeautifulGasOilMeter = StackNavigator(
     },
   },
 );
+
+const BeautifulGasOilMeter = () =>
+  <ActionSheetProvider>
+    <Stack />
+  </ActionSheetProvider>;
 
 export default BeautifulGasOilMeter;

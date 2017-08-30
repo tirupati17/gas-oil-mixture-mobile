@@ -1,13 +1,13 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import TouchableItem from 'react-navigation/lib-rn/views/TouchableItem';
 
 //helpers
 import { GlobalStyles, Constants } from '../assets';
-import { getUnit } from '../helpers';
 import I18n from '../i18n';
 
-const Result = ({ result, locale }) =>
+const Result = ({ resultString, locale, openOptions }) =>
   <View style={[GlobalStyles.materialCard, GlobalStyles.centerAligned]}>
     <View>
       <Text
@@ -21,10 +21,7 @@ const Result = ({ result, locale }) =>
           selectable
           style={[GlobalStyles.title, GlobalStyles.textCenterAligned]}
         >
-          {`${I18n.toNumber(result, {
-            precision: 0,
-            delimiter: ' ',
-          })} ${getUnit(locale).smallShort}`}
+          {resultString}
         </Text>
         <Icon
           name={'format-color-fill'}
@@ -44,6 +41,17 @@ const Result = ({ result, locale }) =>
         {I18n.t('ofOilToGasoline', { locale })}
       </Text>
     </View>
+    <TouchableItem
+      onPress={() => openOptions()}
+      borderless
+      style={{
+        position: 'absolute',
+        right: 0,
+        top: 5,
+      }}
+    >
+      <Icon name={'dots-vertical'} color={Constants.BORDER} size={25} />
+    </TouchableItem>
   </View>;
 
 export default Result;

@@ -28,6 +28,10 @@ const texts = {
   rateApp: 'Bewertungs App',
   contactMe:
     'Wollen Sie mir bei der Übersetzung von App helfen oder einige Tipps für Verbesserungen haben? Fühlen Sie sich frei, mich zu kontaktieren ',
+  shareResult:
+    'Du brauchst das {{resultString}} von Öl zu {{resultGasValue}} von Benzin, im Verhältnis {{resultRatio}}.',
+  share: 'Teilen',
+  cancel: 'Abbrechen',
 };
 
 const units = {

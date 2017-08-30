@@ -24,6 +24,9 @@ const texts = {
   language: '语言',
   rateApp: '评价应用',
   contactMe: '你想帮助我翻译应用程序，还是有一些改进提示？ 随时与我联系 ',
+  shareResult: '您需要将{{resultString}}油加入{{resultGasValue}}汽油，比例为{{resultRatio}}',
+  share: '分享',
+  cancel: '取消',
 };
 
 const units = {

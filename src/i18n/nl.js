@@ -28,6 +28,10 @@ const texts = {
   rateApp: 'Beoordeel App',
   contactMe:
     'Wil je mij helpen bij de vertaling van een app of wat tips voor verbeteringen? Neem gerust contact met mij op ',
+  shareResult:
+    'U moet de {{resultString}} olie toevoegen aan {{resultGasValue}} van benzine, in de verhouding {{resultRatio}}.',
+  share: 'Delen',
+  cancel: 'Annuleren',
 };
 
 const units = {

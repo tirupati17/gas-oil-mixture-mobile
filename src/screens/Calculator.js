@@ -16,7 +16,6 @@ const Calculator = ({
   setOilValue,
   gasValue,
   oilValue,
-  result,
   inputWidth,
   calculateResult,
   autoFocusInput,
@@ -30,7 +29,7 @@ const Calculator = ({
           isGasInput
           icon={'local-gas-station'}
           label={I18n.t('amountOfFuel', { locale })}
-          unitLabel={getUnit(locale).baseShort}
+          unitLabel={I18n.t(getUnit().baseShort, { locale })}
           inputWidth={inputWidth.gas}
           textInputProps={{
             returnKeyType: 'next',
@@ -55,7 +54,7 @@ const Calculator = ({
           onLayout={item => setNumberWidth(item.nativeEvent.layout.width)}
         />
       </View>
-      <Result result={result} locale={locale} />
+      <Result />
       <RatioInfo setOilValue={setOilValue} locale={locale} />
     </KeyboardAvoidingView>
   </ScrollView>;

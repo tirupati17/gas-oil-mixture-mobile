@@ -8,6 +8,11 @@ export default StyleSheet.create({
     width: Sizes.screen.width,
   },
 
+  optionsIcon: {
+    marginRight: 16,
+    color: Constants.BLACK,
+  },
+
   // Aligning items
   leftAligned: {
     alignItems: 'flex-start',
