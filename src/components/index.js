@@ -7,6 +7,7 @@ import AppUnitsPicker from './AppUnitsPicker';
 import ValueInput from './ValueInput';
 import Contact from './Contact';
 import ShitComponent from './ShitComponent';
+import MoreButton from './MoreButton';
 
 export {
   RatioInfo,
@@ -18,4 +19,5 @@ export {
   ValueInput,
   Contact,
   ShitComponent,
+  MoreButton,
 };

@@ -10,7 +10,7 @@ import {
   AutoFocusSwitch,
   AppLocalesPicker,
   AppUnitsPicker,
-  Contact,
+  Contact
 } from '../components';
 
 const Options = ({

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import CommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import TouchableItem from 'react-navigation/lib-rn/views/TouchableItem';
 
+//componenets
+import { MoreButton } from '../components';
 //helpers
 import { GlobalStyles, Constants } from '../assets';
 import I18n from '../i18n';
@@ -42,17 +42,7 @@ const Result = ({ resultString, locale, openOptions }) =>
         {I18n.t('ofOilToGasoline', { locale })}
       </Text>
     </View>
-    <TouchableItem
-      onPress={() => openOptions()}
-      borderless
-      style={{
-        position: 'absolute',
-        right: 2,
-        top: 2,
-      }}
-    >
-      <Icon name={'expand-more'} color={Constants.BORDER} size={25} />
-    </TouchableItem>
+    <MoreButton onPress={() => openOptions()} />
   </View>;
 
 export default Result;
