@@ -2,7 +2,7 @@ const initialState = {
   measurementUnit: 'liters',
   oilValue: '50',
   gasValue: '10',
-  result: '',
+  result: '200',
 };
 
 const onlyNumbers = string => string.replace(/[^0-9.]/g, '');

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import CommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TouchableItem from 'react-navigation/lib-rn/views/TouchableItem';
 
 //helpers
@@ -23,7 +24,7 @@ const Result = ({ resultString, locale, openOptions }) =>
         >
           {resultString}
         </Text>
-        <Icon
+        <CommunityIcon
           name={'format-color-fill'}
           color={Constants.PRIMARY_COLOR}
           size={35}
