@@ -22,6 +22,7 @@
     "react-native": "0.47.1",
     "react-native-action-sheet-fork": "https://github.com/filippofilip95/react-native-action-sheet/tarball/master",
     "react-native-i18n": "^2.0.4",
+    "react-native-material-textfield": "^0.9.0",
     "react-native-vector-icons": "^4.3.0",
     "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.5",

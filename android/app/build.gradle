@@ -97,8 +97,8 @@ android {
         applicationId "com.filippofilip.oilratiocalc"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 8
-        versionName "0.2.5"
+        versionCode 9
+        versionName "0.3.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }

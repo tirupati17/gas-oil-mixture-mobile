@@ -32,6 +32,13 @@ const texts = {
     'Musisz dodać {{resultString}} oleju do {{resultGasValue}} benzyny, w stosunku {{resultRatio}}.',
   share: 'Dzielić',
   cancel: 'Anuluj',
+  save: 'Zapisać',
+  delete: 'Kasować',
+  edit: 'Edytować',
+  detailOfResult: 'Szczegóły wyników',
+  cantBeEmpty: 'Nie może być puste',
+  title: 'Tytuł',
+  description: 'Opis',
 };
 
 const units = {

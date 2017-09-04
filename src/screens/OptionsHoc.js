@@ -1,5 +1,4 @@
 import { compose, withHandlers, lifecycle } from 'recompose';
-import { Share, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {
@@ -13,8 +12,7 @@ import Options from './Options';
 
 //helpers
 import { getResult, getLocales } from '../helpers';
-import { Constants } from '../assets';
-import I18n from '../i18n';
+import { shareApp as shareAppUtil, rateApp as rateAppUtil } from '../utils';
 
 const withReduxConnect = connect(
   state => ({
@@ -41,25 +39,11 @@ const withOptionsHandlers = withHandlers({
   setLocale: ({ setCurrentLocale }) => locale => {
     setCurrentLocale(locale);
   },
-  shareApp: ({ locale }) => async () => {
-    try {
-      const content = {
-        message: I18n.t('shareMessage', { locale }),
-      };
-      const options = {
-        dialogTitle: I18n.t('shareTitle', { locale }),
-      };
-      await Share.share(content, options);
-    } catch (e) {
-      console.log(e);
-    }
+  shareApp: ({ locale }) => () => {
+    shareAppUtil({ locale });
   },
-  rateApp: () => async () => {
-    try {
-      await Linking.openURL(Constants.GOOGLE_PLAY_LINK);
-    } catch (e) {
-      console.log(e);
-    }
+  rateApp: () => () => {
+    rateAppUtil();
   },
 });
 

@@ -121,6 +121,12 @@ export default StyleSheet.create({
   marginBottom: {
     marginBottom: Sizes.margin,
   },
+  marginLeft: {
+    marginLeft: Sizes.margin,
+  },
+  marginRight: {
+    marginRight: Sizes.margin,
+  },
   marginBottomSml: {
     marginBottom: Sizes.marginSml,
   },

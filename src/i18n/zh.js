@@ -11,7 +11,7 @@ const texts = {
   ofOilToGasoline: '油到汽油',
   unitsOfMeasurement: '测量单位',
   litersUnit: '升',
-  usGallons: '美国加仑”',
+  usGallons: '美国加仑',
   imperialGallons: '皇家加仑',
   shareApp: '分享应用',
   shareMessage: `汽油/油混合比计算器 ${Constants.GOOGLE_PLAY_LINK}`,
@@ -27,6 +27,13 @@ const texts = {
   shareResult: '您需要将{{resultString}}油加入{{resultGasValue}}汽油，比例为{{resultRatio}}',
   share: '分享',
   cancel: '取消',
+  save: '保存',
+  delete: '删除',
+  edit: '编辑',
+  detailOfResult: '结果细节',
+  cantBeEmpty: '它不能是空的',
+  title: '标题',
+  description: '说明',
 };
 
 const units = {

@@ -5,7 +5,12 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 //helpers
 import { Constants } from '../assets';
 
-const MoreButton = ({ onPress }) =>
+const MoreButton = ({
+  onPress,
+  iconName = 'expand-more',
+  iconSize = 25,
+  style,
+}) =>
   <TouchableItem
     onPress={onPress}
     borderless
@@ -13,9 +18,10 @@ const MoreButton = ({ onPress }) =>
       position: 'absolute',
       right: 2,
       top: 2,
+      ...style,
     }}
   >
-    <Icon name={'expand-more'} color={Constants.BORDER} size={25} />
+    <Icon name={iconName} color={Constants.BORDER} size={iconSize} />
   </TouchableItem>;
 
 export default MoreButton;

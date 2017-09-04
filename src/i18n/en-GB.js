@@ -32,6 +32,13 @@ const texts = {
     'You need add the {{resultString}} of oil to {{resultGasValue}} of petrol, in the ratio {{resultRatio}}.',
   share: 'Share',
   cancel: 'Cancel',
+  save: 'Save',
+  delete: 'Delete',
+  edit: 'Edit',
+  detailOfResult: 'Detail of result',
+  cantBeEmpty: 'It cannot be empty',
+  title: 'Title',
+  description: 'Description',
 };
 
 const units = {

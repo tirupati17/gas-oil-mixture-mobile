@@ -2697,7 +2697,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8:
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.5.9:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -2798,6 +2798,12 @@ react-native-i18n@^2.0.4:
   resolved "https://registry.yarnpkg.com/react-native-i18n/-/react-native-i18n-2.0.5.tgz#9bd9b37130df803718ffdc7be6a46ec2b0ef95df"
   dependencies:
     i18n-js "github:fnando/i18n-js#v3.0.1"
+
+react-native-material-textfield@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/react-native-material-textfield/-/react-native-material-textfield-0.9.0.tgz#ff83903df90eaf635f4a73c09682996bcbec383f"
+  dependencies:
+    prop-types "^15.5.9"
 
 react-native-tab-view@^0.0.67:
   version "0.0.67"

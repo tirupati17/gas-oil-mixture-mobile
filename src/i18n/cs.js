@@ -32,6 +32,13 @@ const texts = {
     'Potřebujete přidat {{resultString}} oleje do {{resultGasValue}} benzínu v poměru {{resultRatio}}.',
   share: 'Zdílet',
   cancel: 'Zrušit',
+  save: 'Uložit',
+  delete: 'Zmazat',
+  edit: 'Upravit',
+  detailOfResult: 'Detail výsledku',
+  cantBeEmpty: 'Nemůže být prázdný',
+  title: 'Název',
+  description: 'Popis',
 };
 
 const units = {

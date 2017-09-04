@@ -32,6 +32,13 @@ const texts = {
     'Du brauchst das {{resultString}} von Öl zu {{resultGasValue}} von Benzin, im Verhältnis {{resultRatio}}.',
   share: 'Teilen',
   cancel: 'Abbrechen',
+  save: 'Sparen',
+  delete: 'Löschen',
+  edit: 'Bearbeiten',
+  detailOfResult: 'Detail des Ergebnisses',
+  cantBeEmpty: 'Es kann nicht leer sein',
+  title: 'Titel',
+  description: 'Beschreibung',
 };
 
 const units = {

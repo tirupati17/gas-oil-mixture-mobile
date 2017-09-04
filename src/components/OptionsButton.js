@@ -2,10 +2,16 @@ import React from 'react';
 import TouchableItem from 'react-navigation/src/views/TouchableItem';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-const OptionsButton = ({ onPress }) =>
-  <TouchableItem onPress={onPress} borderless>
+const OptionsButton = ({ onPress, iconName = 'more-vert' }) =>
+  <TouchableItem
+    onPress={onPress}
+    borderless
+    style={{
+      marginRight: 8,
+    }}
+  >
     <Icon
-      name={'more-vert'}
+      name={iconName}
       size={25}
       style={{
         padding: 8,

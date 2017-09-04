@@ -8,6 +8,7 @@ import ValueInput from './ValueInput';
 import Contact from './Contact';
 import ShitComponent from './ShitComponent';
 import MoreButton from './MoreButton';
+import SavedResultsList from './SavedResultsListHoc';
 
 export {
   RatioInfo,
@@ -20,4 +21,5 @@ export {
   Contact,
   ShitComponent,
   MoreButton,
+  SavedResultsList,
 };

@@ -1,7 +1,12 @@
 import store from '../store/store';
 
-export default () => {
-  const measurementUnit = store.getState().app.measurementUnit;
+export default unit => {
+  let measurementUnit;
+  if (unit) {
+    measurementUnit = unit;
+  } else {
+    measurementUnit = store.getState().app.measurementUnit;
+  }
   switch (measurementUnit) {
     case 'liters':
       return {

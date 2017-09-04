@@ -32,6 +32,13 @@ const texts = {
     'Вам нужно добавить масло {{resultString}} к {{resultGasValue}} бензина в соотношении {{resultRatio}}',
   share: 'доля',
   cancel: 'Отмена',
+  save: 'спасти',
+  delete: 'Удалить',
+  edit: 'Pедактировать',
+  detailOfResult: 'Деталь результата',
+  cantBeEmpty: 'Он не может быть пустым',
+  title: 'заглавие',
+  description: 'Описание',
 };
 
 const units = {

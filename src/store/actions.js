@@ -4,6 +4,9 @@ export const SET_MEASUREMENT_UNIT = 'SET_MEASUREMENT_UNIT';
 export const SET_OIL_VALUE = 'SET_OIL_VALUE';
 export const SET_GAS_VALUE = 'SET_GAS_VALUE';
 export const SET_RESULT = 'SET_RESULT';
+export const SAVE_RESULT = 'SAVE_RESULT';
+export const DELETE_RESULT = 'DELETE_RESULT';
+export const EDIT_SAVED_RESULT = 'EDIT_SAVED_RESULT';
 
 export const setMeasurementUnit = payload => ({
   type: SET_MEASUREMENT_UNIT,
@@ -22,6 +25,21 @@ export const setGasValue = payload => ({
 
 export const setResult = payload => ({
   type: SET_RESULT,
+  payload,
+});
+
+export const saveResult = payload => ({
+  type: SAVE_RESULT,
+  payload,
+});
+
+export const deleteResult = payload => ({
+  type: DELETE_RESULT,
+  payload,
+});
+
+export const editSavedResult = payload => ({
+  type: EDIT_SAVED_RESULT,
   payload,
 });
 

@@ -8,6 +8,7 @@ import {
   ValueInput,
   ShitComponent,
   MoreButton,
+  SavedResultsList,
 } from '../components';
 
 //helpers
@@ -63,6 +64,7 @@ const Calculator = ({
         <MoreButton onPress={() => openUnitsOptions()} />
       </View>
       <Result />
+      <SavedResultsList />
       <RatioInfo setOilValue={setOilValue} locale={locale} />
     </KeyboardAvoidingView>
   </ScrollView>;
