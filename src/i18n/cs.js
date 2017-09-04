@@ -39,6 +39,7 @@ const texts = {
   cantBeEmpty: 'Nemůže být prázdný',
   title: 'Název',
   description: 'Popis',
+  savedResults: 'Uložené výsledky',
 };
 
 const units = {

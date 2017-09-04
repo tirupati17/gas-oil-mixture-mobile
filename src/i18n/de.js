@@ -39,6 +39,7 @@ const texts = {
   cantBeEmpty: 'Es kann nicht leer sein',
   title: 'Titel',
   description: 'Beschreibung',
+  savedResults: 'Gespeicherte Ergebnisse',
 };
 
 const units = {

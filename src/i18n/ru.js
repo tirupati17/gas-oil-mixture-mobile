@@ -39,6 +39,7 @@ const texts = {
   cantBeEmpty: 'Он не может быть пустым',
   title: 'заглавие',
   description: 'Описание',
+  savedResults: 'Сохраненные результаты',
 };
 
 const units = {

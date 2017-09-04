@@ -39,6 +39,7 @@ const texts = {
   cantBeEmpty: 'Het kan niet leeg zijn',
   title: 'Titel',
   description: 'Omschrijving',
+  savedResults: 'Opgeslagen resultaten',
 };
 
 const units = {

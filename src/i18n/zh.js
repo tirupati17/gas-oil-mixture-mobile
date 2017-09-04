@@ -34,6 +34,7 @@ const texts = {
   cantBeEmpty: '它不能是空的',
   title: '标题',
   description: '说明',
+  savedResults: '保存结果',
 };
 
 const units = {
