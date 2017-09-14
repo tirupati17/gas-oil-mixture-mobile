@@ -18,11 +18,21 @@ const SavedResultsListRow = ({ item, locale, openOptions }) => {
           style={[
             GlobalStyles.subheading,
             GlobalStyles.flex1,
-            GlobalStyles.paddingBottomSml,
+            !item.desc && GlobalStyles.paddingBottomSml,
           ]}
         >
           {item.name}
         </Text>
+        {!!item.desc &&
+          <Text
+            style={[
+              GlobalStyles.body,
+              GlobalStyles.flex1,
+              GlobalStyles.paddingBottomSml,
+            ]}
+          >
+            {item.desc}
+          </Text>}
         <View style={[GlobalStyles.row, GlobalStyles.middleAligned]}>
           <Icon
             name={'format-color-fill'}
