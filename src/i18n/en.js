@@ -40,6 +40,11 @@ const texts = {
   title: 'Title',
   description: 'Description',
   savedResults: 'Saved results',
+  yes: 'Yes',
+  no: 'No',
+  rate: 'Rate',
+  rateAppInPlayStore: 'Please rate this app in Play Store',
+  doYouLikeApp: 'Do you like app?',
 };
 
 const units = {

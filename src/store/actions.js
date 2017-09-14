@@ -48,6 +48,8 @@ export const editSavedResult = payload => ({
 export const SET_AUTO_FOCUS_INPUT = 'SET_AUTO_FOCUS_INPUT';
 export const SET_LOCALES = 'SET_LOCALES';
 export const SET_CURRENT_LOCALE = 'SET_CURRENT_LOCALE';
+export const SET_USER_RATED_APP = 'SET_USER_RATED_APP';
+export const INCREMENT_APP_STARTS_COUNT = 'INCREMENT_APP_STARTS_COUNT';
 
 export const setAutoFocusInput = payload => ({
   type: SET_AUTO_FOCUS_INPUT,
@@ -61,6 +63,16 @@ export const setLocales = payload => ({
 
 export const setCurrentLocale = payload => ({
   type: SET_CURRENT_LOCALE,
+  payload,
+});
+
+export const setUserRatedApp = payload => ({
+  type: SET_USER_RATED_APP,
+  payload,
+});
+
+export const incrementAppStartsCount = payload => ({
+  type: INCREMENT_APP_STARTS_COUNT,
   payload,
 });
 

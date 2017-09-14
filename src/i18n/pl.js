@@ -40,6 +40,11 @@ const texts = {
   title: 'Tytuł',
   description: 'Opis',
   savedResults: 'Zapisane wyniki',
+  yes: 'Tak',
+  no: 'Nie',
+  rate: 'Stawka',
+  rateAppInPlayStore: 'Oceń tę aplikację w Sklepie Play',
+  doYouLikeApp: 'Czy lubisz aplikację?',
 };
 
 const units = {

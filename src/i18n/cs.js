@@ -40,6 +40,11 @@ const texts = {
   title: 'Název',
   description: 'Popis',
   savedResults: 'Uložené výsledky',
+  yes: 'Ano',
+  no: 'Ne',
+  rate: 'Ohodnotit',
+  rateAppInPlayStore: 'Ohodnoťte tuto aplikaci v Obchodě Play',
+  doYouLikeApp: 'Líbí se vám aplikace?',
 };
 
 const units = {

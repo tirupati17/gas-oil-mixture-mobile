@@ -40,6 +40,11 @@ const texts = {
   title: 'Titel',
   description: 'Omschrijving',
   savedResults: 'Opgeslagen resultaten',
+  yes: 'Ja',
+  no: 'Nee',
+  rate: 'Tarief',
+  rateAppInPlayStore: ' Beoordeel deze app in de Play Store',
+  doYouLikeApp: 'Hou je van app?',
 };
 
 const units = {

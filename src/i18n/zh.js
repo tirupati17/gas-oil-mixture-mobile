@@ -35,6 +35,11 @@ const texts = {
   title: '标题',
   description: '说明',
   savedResults: '保存结果',
+  yes: '是',
+  no: '没有',
+  rate: '率',
+  rateAppInPlayStore: '请在Play商店评价这个应用程式',
+  doYouLikeApp: '你喜欢应用程序吗？',
 };
 
 const units = {

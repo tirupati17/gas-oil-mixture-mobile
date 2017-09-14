@@ -9,6 +9,7 @@ import {
   ShitComponent,
   MoreButton,
   SavedResultsList,
+  RateApp,
 } from '../components';
 
 //helpers
@@ -30,43 +31,49 @@ const Calculator = ({
   setNumberWidth,
   openUnitsOptions,
 }) =>
-  <ScrollView style={GlobalStyles.flex1} keyboardShouldPersistTaps={'handled'}>
-    <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
-      <View style={GlobalStyles.materialCard}>
-        <ValueInput
-          isGasInput
-          icon={'local-gas-station'}
-          label={I18n.t('amountOfFuel', { locale })}
-          unitLabel={I18n.t(getUnit().baseShort, { locale })}
-          inputWidth={inputWidth.gas}
-          textInputProps={{
-            returnKeyType: 'next',
-            value: gasValue,
-            onChangeText: gas => setGasValue(gas),
-            onSubmitEditing: () => secondInput.focus(),
-            autoFocus: autoFocusInput,
-          }}
-        />
-        <ValueInput
-          icon={'data-usage'}
-          label={I18n.t('oilMixRatio', { locale })}
-          inputWidth={inputWidth.oil}
-          textInputProps={{
-            returnKeyType: 'done',
-            value: oilValue,
-            onChangeText: oil => setOilValue(oil),
-            ref: input => (secondInput = input),
-          }}
-        />
-        <ShitComponent
-          onLayout={item => setNumberWidth(item.nativeEvent.layout.width)}
-        />
-        <MoreButton onPress={() => openUnitsOptions()} />
-      </View>
-      <Result />
-      <SavedResultsList />
-      <RatioInfo setOilValue={setOilValue} locale={locale} />
-    </KeyboardAvoidingView>
-  </ScrollView>;
+  <View style={GlobalStyles.flex1}>
+    <ScrollView
+      style={GlobalStyles.flex1}
+      keyboardShouldPersistTaps={'handled'}
+    >
+      <KeyboardAvoidingView style={GlobalStyles.marginTopSml}>
+        <View style={GlobalStyles.materialCard}>
+          <ValueInput
+            isGasInput
+            icon={'local-gas-station'}
+            label={I18n.t('amountOfFuel', { locale })}
+            unitLabel={I18n.t(getUnit().baseShort, { locale })}
+            inputWidth={inputWidth.gas}
+            textInputProps={{
+              returnKeyType: 'next',
+              value: gasValue,
+              onChangeText: gas => setGasValue(gas),
+              onSubmitEditing: () => secondInput.focus(),
+              autoFocus: autoFocusInput,
+            }}
+          />
+          <ValueInput
+            icon={'data-usage'}
+            label={I18n.t('oilMixRatio', { locale })}
+            inputWidth={inputWidth.oil}
+            textInputProps={{
+              returnKeyType: 'done',
+              value: oilValue,
+              onChangeText: oil => setOilValue(oil),
+              ref: input => (secondInput = input),
+            }}
+          />
+          <ShitComponent
+            onLayout={item => setNumberWidth(item.nativeEvent.layout.width)}
+          />
+          <MoreButton onPress={() => openUnitsOptions()} />
+        </View>
+        <Result />
+        <SavedResultsList />
+        <RatioInfo setOilValue={setOilValue} locale={locale} />
+      </KeyboardAvoidingView>
+    </ScrollView>
+    <RateApp />
+  </View>;
 
 export default Calculator;

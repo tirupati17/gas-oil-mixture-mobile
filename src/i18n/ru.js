@@ -40,6 +40,11 @@ const texts = {
   title: 'заглавие',
   description: 'Описание',
   savedResults: 'Сохраненные результаты',
+  yes: 'да',
+  no: 'нет',
+  rate: 'скорость',
+  rateAppInPlayStore: 'Оцените это приложение в Play Маркете',
+  doYouLikeApp: 'Вам нравится приложение?',
 };
 
 const units = {
