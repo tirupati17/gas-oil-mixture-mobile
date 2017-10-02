@@ -8,7 +8,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 //helpers
 import { GlobalStyles } from '../assets';
-import { getUnit } from '../helpers';
+import { getUnit, isAndroid } from '../helpers';
 import I18n from '../i18n';
 import { shareResult } from '../utils';
 import { saveResult } from '../store/actions';
@@ -49,17 +49,25 @@ const withResultHandlers = withHandlers({
     measurementUnit,
     navigation,
   }) => () => {
-    const options = [
+    let options = [
       I18n.t('save', { locale }),
       I18n.t('share', { locale }),
       I18n.t('cancel', { locale }),
     ];
-    const icons = [
+
+    let icons = [
       <Icon name={'content-save'} size={ICON_SIZE} style={ICON_STYLE} />,
       <Icon name={'share-variant'} size={ICON_SIZE} style={ICON_STYLE} />,
       <Icon name={'close'} size={ICON_SIZE} style={ICON_STYLE} />,
     ];
-    const cancelButtonIndex = 2;
+
+    let cancelButtonIndex = 2;
+
+    if (isAndroid()) {
+      options.pop();
+      icons.pop();
+      cancelButtonIndex = null;
+    }
 
     showActionSheetWithOptions(
       {

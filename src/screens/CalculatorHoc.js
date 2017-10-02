@@ -14,7 +14,7 @@ import Calculator from './Calculator';
 
 //helpers
 import { Constants } from '../assets';
-import { getResult, handleWidth } from '../helpers';
+import { getResult, handleWidth, isAndroid } from '../helpers';
 import { setGasValue, setOilValue, setMeasurementUnit } from '../store/actions';
 import I18n from '../i18n';
 
@@ -59,13 +59,18 @@ const withCalculatorHandlers = withHandlers({
     setMeasurementUnit,
     locale,
   }) => () => {
-    const options = [
+    let options = [
       I18n.t('litersUnit', { locale }),
       I18n.t('usGallons', { locale }),
       I18n.t('imperialGallons', { locale }),
       I18n.t('cancel', { locale }),
     ];
-    const cancelButtonIndex = 3;
+    let cancelButtonIndex = 3;
+
+    if (isAndroid()) {
+      options.pop();
+      cancelButtonIndex = null;
+    }
 
     showActionSheetWithOptions(
       {

@@ -22,7 +22,7 @@ const RateApp = ({ rateApp, closeRate, isVisible, locale }) =>
     <Text
       style={[
         GlobalStyles.subheading,
-        GlobalStyles.marginBottomSml,
+        GlobalStyles.marginBottom,
         { color: Constants.WHITE },
       ]}
     >
