@@ -76,7 +76,6 @@ const Calculator = ({
           <ShitComponent
             onLayout={item => setNumberWidth(item.nativeEvent.layout.width)}
           />
-          <MoreButton onPress={() => openUnitsOptions()} />
         </View>
         <Result />
         <SavedResultsList />
