@@ -45,6 +45,7 @@ const texts = {
   rate: 'Stawka',
   rateAppInPlayStore: 'Oceń tę aplikację w Sklepie Play',
   doYouLikeApp: 'Czy lubisz aplikację?',
+  unit: 'Jednostka:',
 };
 
 const units = {

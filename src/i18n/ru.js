@@ -45,6 +45,7 @@ const texts = {
   rate: 'скорость',
   rateAppInPlayStore: 'Оцените это приложение в Play Маркете',
   doYouLikeApp: 'Вам нравится приложение?',
+  unit: 'Ед. изм:',
 };
 
 const units = {

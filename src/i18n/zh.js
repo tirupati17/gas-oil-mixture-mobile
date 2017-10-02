@@ -40,6 +40,7 @@ const texts = {
   rate: '率',
   rateAppInPlayStore: '请在Play商店评价这个应用程式',
   doYouLikeApp: '你喜欢应用程序吗？',
+  unit: '单元:',
 };
 
 const units = {

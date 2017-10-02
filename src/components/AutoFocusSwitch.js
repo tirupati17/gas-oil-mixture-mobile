@@ -16,7 +16,13 @@ const AutoFocusSwitch = ({ autoFocusInput, toggleAutoFocus, locale }) =>
     ]}
   >
     <Switch value={autoFocusInput} onValueChange={() => toggleAutoFocus()} />
-    <Text style={[GlobalStyles.body, GlobalStyles.flex1]}>
+    <Text
+      style={[
+        GlobalStyles.body,
+        GlobalStyles.flex1,
+        GlobalStyles.paddingLeftSml,
+      ]}
+    >
       {I18n.t('autoFocusing', { locale })}
     </Text>
   </View>;

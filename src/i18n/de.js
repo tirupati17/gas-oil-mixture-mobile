@@ -45,6 +45,7 @@ const texts = {
   rate: 'Rate',
   rateAppInPlayStore: 'Bitte bewerten Sie diese App im Play Store',
   doYouLikeApp: 'Magst du app?',
+  unit: 'Einheit:',
 };
 
 const units = {

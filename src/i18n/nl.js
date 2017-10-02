@@ -45,6 +45,7 @@ const texts = {
   rate: 'Tarief',
   rateAppInPlayStore: ' Beoordeel deze app in de Play Store',
   doYouLikeApp: 'Hou je van app?',
+  unit: 'Eenheid:',
 };
 
 const units = {

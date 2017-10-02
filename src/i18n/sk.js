@@ -45,6 +45,7 @@ const texts = {
   rate: 'Ohodnotiť',
   rateAppInPlayStore: 'Ohodnoťte túto aplikáciu v službe Obchod Play',
   doYouLikeApp: 'Páči sa vám aplikácia?',
+  unit: 'Jednotka:',
 };
 
 const units = {

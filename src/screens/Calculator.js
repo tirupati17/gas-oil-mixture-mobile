@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ScrollView, KeyboardAvoidingView } from 'react-native';
+import { View, ScrollView, KeyboardAvoidingView, Text } from 'react-native';
 
 //components
 import {
@@ -13,8 +13,8 @@ import {
 } from '../components';
 
 //helpers
-import { GlobalStyles } from '../assets';
-import { getUnit } from '../helpers';
+import { GlobalStyles, Constants } from '../assets';
+import { getUnitLocale, getUnit } from '../helpers';
 import I18n from '../i18n';
 
 let secondInput;
@@ -30,6 +30,7 @@ const Calculator = ({
   locale,
   setNumberWidth,
   openUnitsOptions,
+  measurementUnit,
 }) =>
   <View style={GlobalStyles.flex1}>
     <ScrollView
@@ -63,6 +64,14 @@ const Calculator = ({
               ref: input => (secondInput = input),
             }}
           />
+          <Text
+            style={[GlobalStyles.body2, { color: Constants.SECONDARY_COLOR }]}
+          >
+            {`${I18n.t('unit', { locale })} ${I18n.t(
+              getUnitLocale(measurementUnit),
+              { locale },
+            )}`}
+          </Text>
           <ShitComponent
             onLayout={item => setNumberWidth(item.nativeEvent.layout.width)}
           />
