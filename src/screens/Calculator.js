@@ -65,6 +65,7 @@ const Calculator = ({
             }}
           />
           <Text
+            onPress={() => openUnitsOptions()}
             style={[GlobalStyles.body2, { color: Constants.SECONDARY_COLOR }]}
           >
             {`${I18n.t('unit', { locale })} ${I18n.t(
