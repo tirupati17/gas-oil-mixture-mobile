@@ -1,7 +1,7 @@
 {
   "name": "gas-oil-ratio-calculator",
   "description": "Mobile app which calculate gasoline/oil ratio for 2 stroke engines.",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "author": "Filip Papranec",
   "keywords": [
     "react-native",
