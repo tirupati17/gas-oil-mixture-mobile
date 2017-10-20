@@ -5,7 +5,7 @@ import { Constants } from '../assets';
 const texts = {
   oilRatioCalculator: 'Benzine/Oil Calculator',
   options: 'Opties',
-  amountOfFuel: 'Bedrag van benzine:',
+  amountOfFuel: 'Liters benzine:',
   oilMixRatio: 'Oliemix ratio:',
   youNeedAdd: 'Je moet toevoegen',
   ofOilToGasoline: 'van olie naar benzine.',
