@@ -64,6 +64,7 @@ const states = {
   ru: '俄',
   pl: '抛光',
   zh: '中文',
+  es: '西班牙語'
 };
 
 export default {

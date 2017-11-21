@@ -69,6 +69,7 @@ const states = {
   ru: 'Russisch',
   pl: 'Pools',
   zh: 'Chinese',
+  es: 'Spaans'
 };
 
 export default {
