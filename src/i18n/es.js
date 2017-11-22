@@ -30,7 +30,7 @@ const texts = {
     'Deseas ayudarme con la traducción de la app o tienes algunos consejos o propuestas que ofrecerme? Siéntete libre de contactarme a ',
   shareResult:
     'Necesitas añadir {{resultString}} de petróleo a {{resultGasValue}} de gasolina, con la relación {{resultRatio}}.',
-  share: 'Comparte',
+  share: 'Compartir',
   cancel: 'Cancelar',
   save: 'Guardar',
   delete: 'Eliminar',
