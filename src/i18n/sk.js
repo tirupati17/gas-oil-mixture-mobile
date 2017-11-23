@@ -69,6 +69,7 @@ const states = {
   ru: 'Rusky',
   pl: 'Polsky',
   zh: 'Čínsky',
+  es: 'Španielsky'
 };
 
 export default {
