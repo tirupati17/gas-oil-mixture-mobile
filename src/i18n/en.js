@@ -57,6 +57,7 @@ const units = {
   gal: 'gal.',
   ounce: 'ounce',
   oz: 'oz.',
+  es: 'Spanish'
 };
 
 const states = {

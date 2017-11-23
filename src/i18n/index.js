@@ -8,6 +8,7 @@ import cs from './cs';
 import ru from './ru';
 import pl from './pl';
 import zh from './zh';
+import es from './es';
 
 I18n.fallbacks = true;
 I18n.defaultLocale = 'en-EN';
@@ -22,6 +23,7 @@ I18n.translations = {
   pl,
   zh,
   'en-GB': en_GB,
+  es
 };
 
 export default I18n;
