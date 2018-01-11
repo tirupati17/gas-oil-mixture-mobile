@@ -6,7 +6,7 @@ const texts = {
   oilRatioCalculator: 'Калькулятор бензина / масла',
   options: 'Параметры',
   amountOfFuel: 'Количество бензина:',
-  oilMixRatio: 'Соотношение масляной смеси:',
+  oilMixRatio: 'Cоотношение смеси:',
   youNeedAdd: 'Вам нужно добавить',
   ofOilToGasoline: 'нефти на бензин',
   unitsOfMeasurement: 'Единица измерения',

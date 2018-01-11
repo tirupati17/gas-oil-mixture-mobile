@@ -3,7 +3,7 @@ import { Constants } from '../assets';
 //CZECH
 
 const texts = {
-  oilRatioCalculator: 'Benzinová/Olejová kalkulačka',
+  oilRatioCalculator: 'Benzínová/Olejová kalkulačka',
   options: 'Možnosti',
   amountOfFuel: 'Množství benzínu:',
   oilMixRatio: 'Poměr směsi oleje:',
@@ -17,13 +17,13 @@ const texts = {
   shareMessage: `Kalkulátor poměru benzínu a oleje ${Constants.GOOGLE_PLAY_LINK}`,
   shareTitle: 'Kalkulačka poměrového mixu Venzínu/Oleje',
   firstHoursRecomendation:
-    'Pokud je dvoudobý motor v provozu teprve 10 provozních hodin, požadovaný poměr směsi benzínu a oleje je ',
+    'Pokud je dvoudobý motor v provozu teprve 10 provozních hodin, požadovaný poměr směsi oleje a benzínu je ',
   afterRecomendation:
-    'Po provedení prvních 10 provozních hodin je požadovaný poměr směsi Venzínu/Oleje je ',
+    'Po uběhnutí prvních 10 provozních hodin, požadovaný poměr směsi oleje a benzínu je ',
   readManual:
-    'Přečtěte si prosím vaši příručku k motoru, poměry se mohou lišit od uvedených doporučení.',
+    'Přečtěte si prosím Vaši příručku k motoru, poměry se mohou lišit od uvedených doporučení.',
   instructions: 'Pokyny',
-  autoFocusing: 'Automaticke zadávání množství benzínu při spuštění aplikace.',
+  autoFocusing: 'Automatické zadávání množství benzínu při spuštění aplikace.',
   language: 'Jazyk',
   rateApp: 'Ohodnoťte Aplikaci',
   contactMe:
