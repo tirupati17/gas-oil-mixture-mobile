@@ -1,10 +1,10 @@
-import getUnit from './getUnit';
-import getResult from './getResult';
-import getLocales from './getLocales';
-import handleWidth from './handleWidth';
-import shortId from './shortId';
-import { isAndroid } from './device';
-import getUnitLocale from './getUnitLocale';
+import getUnit from './getUnit'
+import getResult from './getResult'
+import getLocales from './getLocales'
+import handleWidth from './handleWidth'
+import shortId from './shortId'
+import { isAndroid } from './device'
+import getUnitLocale from './getUnitLocale'
 
 export {
   getUnit,
@@ -14,4 +14,4 @@ export {
   shortId,
   isAndroid,
   getUnitLocale,
-};
+}

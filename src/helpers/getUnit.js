@@ -1,11 +1,11 @@
-import store from '../store/store';
+import store from '../store/store'
 
 export default unit => {
-  let measurementUnit;
+  let measurementUnit
   if (unit) {
-    measurementUnit = unit;
+    measurementUnit = unit
   } else {
-    measurementUnit = store.getState().app.measurementUnit;
+    measurementUnit = store.getState().app.measurementUnit
   }
   switch (measurementUnit) {
     case 'liters':
@@ -14,20 +14,20 @@ export default unit => {
         baseShort: 'l',
         small: 'milliliter',
         smallShort: 'ml',
-      };
+      }
     case 'us':
       return {
         base: 'gallon',
         baseShort: 'gal',
         small: 'ounce',
         smallShort: 'oz',
-      };
+      }
     case 'imperial':
       return {
         base: 'gallon',
         baseShort: 'gal',
         small: 'ounce',
         smallShort: 'oz',
-      };
+      }
   }
-};
+}

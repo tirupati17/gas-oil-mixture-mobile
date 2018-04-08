@@ -1,22 +1,22 @@
-import React from 'react';
-import { Text, View, Linking } from 'react-native';
+import React from 'react'
+import { Text, View, Linking } from 'react-native'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import I18n from '../i18n';
+import { GlobalStyles, Constants } from '../assets'
+import I18n from '../i18n'
 
 const contactMe = async () => {
   try {
-    await Linking.openURL(`mailto:${Constants.DEVELOPER_EMAIL}`);
+    await Linking.openURL(`mailto:${Constants.DEVELOPER_EMAIL}`)
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
-};
+}
 
 const textLink = [
   { fontSize: 14, textDecorationLine: 'underline' },
   GlobalStyles.link,
-];
+]
 
 const Contact = ({ locale }) =>
   <View style={[GlobalStyles.materialCard]}>
@@ -26,6 +26,6 @@ const Contact = ({ locale }) =>
         {Constants.DEVELOPER_EMAIL}
       </Text>
     </Text>
-  </View>;
+  </View>
 
-export default Contact;
+export default Contact

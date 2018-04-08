@@ -1,17 +1,17 @@
-import React from 'react';
-import { View, ScrollView, Button, KeyboardAvoidingView } from 'react-native';
+import React from 'react'
+import { View, ScrollView, Button, KeyboardAvoidingView } from 'react-native'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import I18n from '../i18n';
+import { GlobalStyles, Constants } from '../assets'
+import I18n from '../i18n'
 
 //components
 import {
   AutoFocusSwitch,
   AppLocalesPicker,
   AppUnitsPicker,
-  Contact
-} from '../components';
+  Contact,
+} from '../components'
 
 const Options = ({
   setUnit,
@@ -59,6 +59,6 @@ const Options = ({
       </View>
       <Contact locale={locale} />
     </KeyboardAvoidingView>
-  </ScrollView>;
+  </ScrollView>
 
-export default Options;
+export default Options

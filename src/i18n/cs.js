@@ -1,4 +1,4 @@
-import { Constants } from '../assets';
+import { Constants } from '../assets'
 
 //CZECH
 
@@ -46,7 +46,7 @@ const texts = {
   rateAppInPlayStore: 'Ohodnoťte tuto aplikaci v Obchodě Play',
   doYouLikeApp: 'Líbí se vám aplikace?',
   unit: 'Jednotka:',
-};
+}
 
 const units = {
   liters: 'litry',
@@ -57,7 +57,7 @@ const units = {
   gal: 'gal.',
   ounce: 'unce',
   oz: 'oz.',
-};
+}
 
 const states = {
   sk: 'Slovenské',
@@ -69,11 +69,11 @@ const states = {
   ru: 'Ruský',
   pl: 'Polština',
   zh: 'Čínština',
-  es: 'Španělsky'
-};
+  es: 'Španělsky',
+}
 
 export default {
   ...texts,
   ...units,
   ...states,
-};
+}

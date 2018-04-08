@@ -1,6 +1,6 @@
-import { Platform, StyleSheet } from 'react-native';
-import Constants from './constants';
-import Sizes from './sizes';
+import { Platform, StyleSheet } from 'react-native'
+import Constants from './constants'
+import Sizes from './sizes'
 
 export default StyleSheet.create({
   windowSize: {
@@ -251,4 +251,4 @@ export default StyleSheet.create({
   flex6: {
     flex: 6,
   },
-});
+})

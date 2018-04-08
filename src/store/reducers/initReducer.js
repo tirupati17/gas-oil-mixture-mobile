@@ -1,6 +1,6 @@
 const initialState = {
   ready: false,
-};
+}
 
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -8,8 +8,8 @@ export default (state = initialState, action) => {
       return {
         ...state,
         ready: true,
-      };
+      }
     default:
-      return state;
+      return state
   }
-};
+}

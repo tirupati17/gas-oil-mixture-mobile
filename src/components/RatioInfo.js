@@ -1,21 +1,21 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React from 'react'
+import { Text, View } from 'react-native'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import I18n from '../i18n';
+import { GlobalStyles, Constants } from '../assets'
+import I18n from '../i18n'
 
 const textStyle = [
   GlobalStyles.borderTopLine,
   GlobalStyles.paddingVerticalSml,
   GlobalStyles.body2,
   { fontSize: 14 },
-];
+]
 
 const textLink = [
   { fontSize: 14, textDecorationLine: 'underline' },
   GlobalStyles.link,
-];
+]
 
 const RatioInfo = ({ setOilValue, locale }) =>
   <View style={[GlobalStyles.materialCard, GlobalStyles.flex1]}>
@@ -40,6 +40,6 @@ const RatioInfo = ({ setOilValue, locale }) =>
     <Text selectable style={[...textStyle, { fontWeight: '500' }]}>
       {I18n.t('readManual', { locale })}
     </Text>
-  </View>;
+  </View>
 
-export default RatioInfo;
+export default RatioInfo

@@ -1,11 +1,11 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import TouchableItem from 'react-navigation/src/views/TouchableItem';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import React from 'react'
+import { View, Text } from 'react-native'
+import TouchableItem from 'react-navigation/src/views/TouchableItem'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 //helpers
-import { Constants, GlobalStyles } from '../assets';
-import I18 from '../i18n';
+import { Constants, GlobalStyles } from '../assets'
+import I18 from '../i18n'
 
 const RateApp = ({ rateApp, closeRate, isVisible, locale }) =>
   isVisible &&
@@ -88,6 +88,6 @@ const RateApp = ({ rateApp, closeRate, isVisible, locale }) =>
         </TouchableItem>
       </View>
     </View>
-  </View>;
+  </View>
 
-export default RateApp;
+export default RateApp

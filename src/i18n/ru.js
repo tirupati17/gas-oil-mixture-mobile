@@ -1,4 +1,4 @@
-import { Constants } from '../assets';
+import { Constants } from '../assets'
 
 //RUSSIAN
 
@@ -8,7 +8,7 @@ const texts = {
   amountOfFuel: 'Количество бензина:',
   oilMixRatio: 'Cоотношение смеси:',
   youNeedAdd: 'Вам нужно добавить',
-  ofOilToGasoline: 'нефти на бензин',
+  ofOilToGasoline: 'масла в бензин',
   unitsOfMeasurement: 'Единица измерения',
   litersUnit: 'Литры',
   usGallons: 'аллоны США',
@@ -46,7 +46,7 @@ const texts = {
   rateAppInPlayStore: 'Оцените это приложение в Play Маркете',
   doYouLikeApp: 'Вам нравится приложение?',
   unit: 'Ед. изм:',
-};
+}
 
 const units = {
   liters: 'литры',
@@ -57,7 +57,7 @@ const units = {
   gal: 'gal.',
   ounce: 'унция',
   oz: 'oz.',
-};
+}
 
 const states = {
   sk: 'Словацкий',
@@ -69,11 +69,11 @@ const states = {
   ru: 'Pусский',
   pl: 'полировать',
   zh: 'Китайский',
-  es: 'испанский'
-};
+  es: 'испанский',
+}
 
 export default {
   ...texts,
   ...units,
   ...states,
-};
+}

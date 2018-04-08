@@ -1,5 +1,5 @@
-import initReducer from './initReducer';
-import appReducer from './appReducer';
-import settingsReducer from './settingsReducer';
+import initReducer from './initReducer'
+import appReducer from './appReducer'
+import settingsReducer from './settingsReducer'
 
-export { initReducer, appReducer, settingsReducer };
+export { initReducer, appReducer, settingsReducer }

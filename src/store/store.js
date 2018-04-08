@@ -1,6 +1,6 @@
-import { createStore, combineReducers, compose } from 'redux';
-import { autoRehydrate } from 'redux-persist';
-import { initReducer, appReducer, settingsReducer } from './reducers';
+import { createStore, combineReducers, compose } from 'redux'
+import { autoRehydrate } from 'redux-persist'
+import { initReducer, appReducer, settingsReducer } from './reducers'
 
 export default createStore(
   combineReducers({
@@ -13,4 +13,4 @@ export default createStore(
     autoRehydrate(),
     window.devToolsExtension ? window.devToolsExtension() : f => f,
   ),
-);
+)

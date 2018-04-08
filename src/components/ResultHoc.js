@@ -1,24 +1,24 @@
-import React from 'react';
-import { compose, withHandlers, withProps } from 'recompose';
-import { withNavigation } from 'react-navigation';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { connectActionSheet } from 'react-native-action-sheet-fork';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import React from 'react'
+import { compose, withHandlers, withProps } from 'recompose'
+import { withNavigation } from 'react-navigation'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { connectActionSheet } from 'react-native-action-sheet-fork'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 //helpers
-import { GlobalStyles } from '../assets';
-import { getUnit, isAndroid } from '../helpers';
-import I18n from '../i18n';
-import { shareResult } from '../utils';
-import { saveResult } from '../store/actions';
+import { GlobalStyles } from '../assets'
+import { getUnit, isAndroid } from '../helpers'
+import I18n from '../i18n'
+import { shareResult } from '../utils'
+import { saveResult } from '../store/actions'
 
 //components
-import Result from './Result';
+import Result from './Result'
 
 //constants
-const ICON_STYLE = GlobalStyles.optionsIcon;
-const ICON_SIZE = 20;
+const ICON_STYLE = GlobalStyles.optionsIcon
+const ICON_SIZE = 20
 
 const withReduxConnect = connect(
   state => ({
@@ -29,14 +29,14 @@ const withReduxConnect = connect(
     locale: state.settings.currentLocale,
   }),
   dispatch => bindActionCreators({ saveResult }, dispatch),
-);
+)
 
 const withResultProps = withProps(({ result, locale }) => ({
   resultString: `${I18n.toNumber(result, {
     precision: 0,
     delimiter: ' ',
   })} ${I18n.t(getUnit().smallShort, { locale })}`,
-}));
+}))
 
 const withResultHandlers = withHandlers({
   openOptions: ({
@@ -53,20 +53,20 @@ const withResultHandlers = withHandlers({
       I18n.t('save', { locale }),
       I18n.t('share', { locale }),
       I18n.t('cancel', { locale }),
-    ];
+    ]
 
     let icons = [
       <Icon name={'content-save'} size={ICON_SIZE} style={ICON_STYLE} />,
       <Icon name={'share-variant'} size={ICON_SIZE} style={ICON_STYLE} />,
       <Icon name={'close'} size={ICON_SIZE} style={ICON_STYLE} />,
-    ];
+    ]
 
-    let cancelButtonIndex = 2;
+    let cancelButtonIndex = 2
 
     if (isAndroid()) {
-      options.pop();
-      icons.pop();
-      cancelButtonIndex = null;
+      options.pop()
+      icons.pop()
+      cancelButtonIndex = null
     }
 
     showActionSheetWithOptions(
@@ -85,15 +85,15 @@ const withResultHandlers = withHandlers({
               measurementUnit,
             },
             isEditable: false,
-          });
+          })
         }
         if (buttonIndex === 1) {
-          shareResult({ oilValue, gasValue, locale, resultString });
+          shareResult({ oilValue, gasValue, locale, resultString })
         }
       },
-    );
+    )
   },
-});
+})
 
 export default compose(
   withReduxConnect,
@@ -101,4 +101,4 @@ export default compose(
   connectActionSheet,
   withResultProps,
   withResultHandlers,
-)(Result);
+)(Result)

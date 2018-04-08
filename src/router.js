@@ -1,18 +1,18 @@
-import React from 'react';
-import { StackNavigator } from 'react-navigation';
-import { ActionSheetProvider } from 'react-native-action-sheet-fork';
+import React from 'react'
+import { StackNavigator } from 'react-navigation'
+import { ActionSheetProvider } from 'react-native-action-sheet-fork'
 
 //helpers
-import { Constants } from './assets';
-import I18n from './i18n';
+import { Constants } from './assets'
+import I18n from './i18n'
 
 //Screens
-import Calculator from './screens/CalculatorHoc';
-import Options from './screens/OptionsHoc';
-import ResultDetail from './screens/ResultDetailHoc';
+import Calculator from './screens/CalculatorHoc'
+import Options from './screens/OptionsHoc'
+import ResultDetail from './screens/ResultDetailHoc'
 
 //Components
-import { OptionsButton } from './components';
+import { OptionsButton } from './components'
 
 const Stack = StackNavigator(
   {
@@ -52,11 +52,11 @@ const Stack = StackNavigator(
       },
     },
   },
-);
+)
 
 const BeautifulGasOilMeter = () =>
   <ActionSheetProvider>
     <Stack />
-  </ActionSheetProvider>;
+  </ActionSheetProvider>
 
-export default BeautifulGasOilMeter;
+export default BeautifulGasOilMeter

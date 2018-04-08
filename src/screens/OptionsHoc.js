@@ -1,18 +1,18 @@
-import { compose, withHandlers, lifecycle } from 'recompose';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { compose, withHandlers, lifecycle } from 'recompose'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import {
   setMeasurementUnit,
   setAutoFocusInput,
   setCurrentLocale,
-} from '../store/actions';
+} from '../store/actions'
 
 //components
-import Options from './Options';
+import Options from './Options'
 
 //helpers
-import { getResult, getLocales } from '../helpers';
-import { shareApp as shareAppUtil, rateApp as rateAppUtil } from '../utils';
+import { getResult, getLocales } from '../helpers'
+import { shareApp as shareAppUtil, rateApp as rateAppUtil } from '../utils'
 
 const withReduxConnect = connect(
   state => ({
@@ -26,33 +26,33 @@ const withReduxConnect = connect(
       { setMeasurementUnit, setAutoFocusInput, setCurrentLocale },
       dispatch,
     ),
-);
+)
 
 const withOptionsHandlers = withHandlers({
   setUnit: ({ setMeasurementUnit, setResult }) => value => {
-    setMeasurementUnit(value);
-    getResult();
+    setMeasurementUnit(value)
+    getResult()
   },
   toggleAutoFocus: ({ setAutoFocusInput, autoFocusInput }) => () => {
-    setAutoFocusInput(!autoFocusInput);
+    setAutoFocusInput(!autoFocusInput)
   },
   setLocale: ({ setCurrentLocale }) => locale => {
-    setCurrentLocale(locale);
+    setCurrentLocale(locale)
   },
   shareApp: ({ locale }) => () => {
-    shareAppUtil({ locale });
+    shareAppUtil({ locale })
   },
   rateApp: () => () => {
-    rateAppUtil();
+    rateAppUtil()
   },
-});
+})
 
 const withLifecycle = lifecycle({
   componentWillMount() {
-    getLocales();
+    getLocales()
   },
-});
+})
 
 export default compose(withReduxConnect, withLifecycle, withOptionsHandlers)(
   Options,
-);
+)

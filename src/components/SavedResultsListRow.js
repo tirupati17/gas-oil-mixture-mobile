@@ -1,14 +1,14 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import React from 'react'
+import { View, Text } from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import { getUnit } from '../helpers';
-import I18n from '../i18n';
+import { GlobalStyles, Constants } from '../assets'
+import { getUnit } from '../helpers'
+import I18n from '../i18n'
 
 // components
-import TouchableItem from 'react-navigation/lib-rn/views/TouchableItem';
+import TouchableItem from 'react-navigation/lib-rn/views/TouchableItem'
 
 const SavedResultsListRow = ({ item, locale, openOptions }) => {
   return (
@@ -73,7 +73,7 @@ const SavedResultsListRow = ({ item, locale, openOptions }) => {
         </View>
       </View>
     </TouchableItem>
-  );
-};
+  )
+}
 
-export default SavedResultsListRow;
+export default SavedResultsListRow

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Text } from 'react-native';
+import React from 'react'
+import { Text } from 'react-native'
 
 //helpers
-import { GlobalStyles } from '../assets';
+import { GlobalStyles } from '../assets'
 
 // Can't measure width of number on various devices
 // Must render it and measure onLayout
@@ -21,6 +21,6 @@ const ShitComponent = props =>
     {...props}
   >
     3
-  </Text>;
+  </Text>
 
-export default ShitComponent;
+export default ShitComponent

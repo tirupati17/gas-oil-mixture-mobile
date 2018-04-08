@@ -1,9 +1,9 @@
-import React from 'react';
-import { View, Text, Switch } from 'react-native';
+import React from 'react'
+import { View, Text, Switch } from 'react-native'
 
 //helpers
-import I18n from '../i18n';
-import { GlobalStyles } from '../assets';
+import I18n from '../i18n'
+import { GlobalStyles } from '../assets'
 
 const AutoFocusSwitch = ({ autoFocusInput, toggleAutoFocus, locale }) =>
   <View
@@ -25,6 +25,6 @@ const AutoFocusSwitch = ({ autoFocusInput, toggleAutoFocus, locale }) =>
     >
       {I18n.t('autoFocusing', { locale })}
     </Text>
-  </View>;
+  </View>
 
-export default AutoFocusSwitch;
+export default AutoFocusSwitch

@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, ScrollView, KeyboardAvoidingView, Text } from 'react-native';
+import React from 'react'
+import { View, ScrollView, KeyboardAvoidingView, Text } from 'react-native'
 
 //components
 import {
@@ -10,14 +10,14 @@ import {
   MoreButton,
   SavedResultsList,
   RateApp,
-} from '../components';
+} from '../components'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import { getUnitLocale, getUnit } from '../helpers';
-import I18n from '../i18n';
+import { GlobalStyles, Constants } from '../assets'
+import { getUnitLocale, getUnit } from '../helpers'
+import I18n from '../i18n'
 
-let secondInput;
+let secondInput
 
 const Calculator = ({
   setGasValue,
@@ -83,6 +83,6 @@ const Calculator = ({
       </KeyboardAvoidingView>
     </ScrollView>
     <RateApp />
-  </View>;
+  </View>
 
-export default Calculator;
+export default Calculator

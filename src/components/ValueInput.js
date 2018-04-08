@@ -1,9 +1,9 @@
-import React from 'react';
-import { View, Text, TextInput } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import React from 'react'
+import { View, Text, TextInput } from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
+import { GlobalStyles, Constants } from '../assets'
 
 const ValueInput = ({
   icon,
@@ -51,6 +51,6 @@ const ValueInput = ({
           {unitLabel}
         </Text>}
     </View>
-  </View>;
+  </View>
 
-export default ValueInput;
+export default ValueInput

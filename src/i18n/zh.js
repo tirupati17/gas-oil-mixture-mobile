@@ -1,4 +1,4 @@
-import { Constants } from '../assets';
+import { Constants } from '../assets'
 
 //CHINESE
 
@@ -41,7 +41,7 @@ const texts = {
   rateAppInPlayStore: '请在Play商店评价这个应用程式',
   doYouLikeApp: '你喜欢应用程序吗？',
   unit: '单元:',
-};
+}
 
 const units = {
   liters: '升',
@@ -52,7 +52,7 @@ const units = {
   gal: '加仑',
   ounce: '盎司',
   oz: '盎司',
-};
+}
 
 const states = {
   sk: '斯洛伐克语',
@@ -64,11 +64,11 @@ const states = {
   ru: '俄',
   pl: '抛光',
   zh: '中文',
-  es: '西班牙語'
-};
+  es: '西班牙語',
+}
 
 export default {
   ...texts,
   ...units,
   ...states,
-};
+}

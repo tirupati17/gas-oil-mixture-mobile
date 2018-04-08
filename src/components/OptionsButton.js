@@ -1,6 +1,6 @@
-import React from 'react';
-import TouchableItem from 'react-navigation/src/views/TouchableItem';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import React from 'react'
+import TouchableItem from 'react-navigation/src/views/TouchableItem'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 const OptionsButton = ({ onPress, iconName = 'more-vert' }) =>
   <TouchableItem
@@ -18,6 +18,6 @@ const OptionsButton = ({ onPress, iconName = 'more-vert' }) =>
         color: 'white',
       }}
     />
-  </TouchableItem>;
+  </TouchableItem>
 
-export default OptionsButton;
+export default OptionsButton

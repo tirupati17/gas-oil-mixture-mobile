@@ -1,4 +1,4 @@
-import { Constants } from '../assets';
+import { Constants } from '../assets'
 
 //GERMAN
 
@@ -46,7 +46,7 @@ const texts = {
   rateAppInPlayStore: 'Bitte bewerten Sie diese App im Play Store',
   doYouLikeApp: 'Magst du app?',
   unit: 'Einheit:',
-};
+}
 
 const units = {
   liters: 'Liter',
@@ -57,7 +57,7 @@ const units = {
   gal: 'gal.',
   ounce: 'Unze',
   oz: 'oz.',
-};
+}
 
 const states = {
   sk: 'Slowakisch',
@@ -69,11 +69,11 @@ const states = {
   ru: 'Russisch',
   pl: 'Polieren',
   zh: 'Chinesisch',
-  es: 'Spanisch'
-};
+  es: 'Spanisch',
+}
 
 export default {
   ...texts,
   ...units,
   ...states,
-};
+}

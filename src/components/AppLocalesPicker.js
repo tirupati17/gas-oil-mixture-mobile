@@ -1,9 +1,9 @@
-import React from 'react';
-import { Picker, View, Text } from 'react-native';
+import React from 'react'
+import { Picker, View, Text } from 'react-native'
 
 //helpers
-import I18n from '../i18n';
-import GlobalStyles from '../assets/GlobalStyles';
+import I18n from '../i18n'
+import GlobalStyles from '../assets/GlobalStyles'
 
 const AppLocalesPicker = ({ appLocales, locale, setLocale }) => {
   if (!!appLocales) {
@@ -26,10 +26,10 @@ const AppLocalesPicker = ({ appLocales, locale, setLocale }) => {
           )}
         </Picker>
       </View>
-    );
+    )
   } else {
-    return null;
+    return null
   }
-};
+}
 
-export default AppLocalesPicker;
+export default AppLocalesPicker

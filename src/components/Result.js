@@ -1,12 +1,12 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import CommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import React from 'react'
+import { Text, View } from 'react-native'
+import CommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 //componenets
-import { MoreButton } from '../components';
+import { MoreButton } from '../components'
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import I18n from '../i18n';
+import { GlobalStyles, Constants } from '../assets'
+import I18n from '../i18n'
 
 const Result = ({ resultString, locale, openOptions }) =>
   <View style={[GlobalStyles.materialCard, GlobalStyles.centerAligned]}>
@@ -43,6 +43,6 @@ const Result = ({ resultString, locale, openOptions }) =>
       </Text>
     </View>
     <MoreButton onPress={() => openOptions()} />
-  </View>;
+  </View>
 
-export default Result;
+export default Result

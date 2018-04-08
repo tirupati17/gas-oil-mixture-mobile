@@ -4,19 +4,19 @@ import {
   lifecycle,
   withState,
   withHandlers,
-} from 'recompose';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { connectActionSheet } from 'react-native-action-sheet-fork';
+} from 'recompose'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { connectActionSheet } from 'react-native-action-sheet-fork'
 
 //componenets
-import Calculator from './Calculator';
+import Calculator from './Calculator'
 
 //helpers
-import { Constants } from '../assets';
-import { getResult, handleWidth, isAndroid } from '../helpers';
-import { setGasValue, setOilValue, setMeasurementUnit } from '../store/actions';
-import I18n from '../i18n';
+import { Constants } from '../assets'
+import { getResult, handleWidth, isAndroid } from '../helpers'
+import { setGasValue, setOilValue, setMeasurementUnit } from '../store/actions'
+import I18n from '../i18n'
 
 const withReduxConnect = connect(
   state => ({
@@ -32,26 +32,26 @@ const withReduxConnect = connect(
       { setGasValue, setOilValue, setMeasurementUnit },
       dispatch,
     ),
-);
+)
 
 const withAutoInputWidth = withProps(props => ({
   inputWidth: {
     gas: handleWidth(props.gasValue.length, props.numberWidth),
     oil: handleWidth(props.oilValue.length, props.numberWidth),
   },
-}));
+}))
 
 const withFirstCalculation = lifecycle({
   componentWillReceiveProps() {
-    getResult();
+    getResult()
   },
-});
+})
 
 const measureNumberWidth = withState(
   'numberWidth',
   'setNumberWidth',
   Constants.INITIAL_NUMBER_WIDTH,
-);
+)
 
 const withCalculatorHandlers = withHandlers({
   openUnitsOptions: ({
@@ -64,12 +64,12 @@ const withCalculatorHandlers = withHandlers({
       I18n.t('usGallons', { locale }),
       I18n.t('imperialGallons', { locale }),
       I18n.t('cancel', { locale }),
-    ];
-    let cancelButtonIndex = 3;
+    ]
+    let cancelButtonIndex = 3
 
     if (isAndroid()) {
-      options.pop();
-      cancelButtonIndex = null;
+      options.pop()
+      cancelButtonIndex = null
     }
 
     showActionSheetWithOptions(
@@ -80,19 +80,19 @@ const withCalculatorHandlers = withHandlers({
       buttonIndex => {
         switch (buttonIndex) {
           case 0:
-            setMeasurementUnit('liters');
-            break;
+            setMeasurementUnit('liters')
+            break
           case 1:
-            setMeasurementUnit('us');
-            break;
+            setMeasurementUnit('us')
+            break
           case 2:
-            setMeasurementUnit('imperial');
-            break;
+            setMeasurementUnit('imperial')
+            break
         }
       },
-    );
+    )
   },
-});
+})
 
 export default compose(
   withReduxConnect,
@@ -101,4 +101,4 @@ export default compose(
   withAutoInputWidth,
   withFirstCalculation,
   withCalculatorHandlers,
-)(Calculator);
+)(Calculator)

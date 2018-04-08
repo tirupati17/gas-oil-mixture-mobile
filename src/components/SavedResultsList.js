@@ -1,12 +1,12 @@
-import React from 'react';
-import { FlatList, View, Text } from 'react-native';
+import React from 'react'
+import { FlatList, View, Text } from 'react-native'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import I18n from '../i18n';
+import { GlobalStyles, Constants } from '../assets'
+import I18n from '../i18n'
 
 //componenets
-import SavedResultsListRow from './SavedResultsListRowHoc';
+import SavedResultsListRow from './SavedResultsListRowHoc'
 
 const SavedResultsList = ({ savedResults, locale }) =>
   <View style={GlobalStyles.materialCard}>
@@ -33,6 +33,6 @@ const SavedResultsList = ({ savedResults, locale }) =>
         />}
       renderItem={({ item }) => <SavedResultsListRow item={item} />}
     />
-  </View>;
+  </View>
 
-export default SavedResultsList;
+export default SavedResultsList

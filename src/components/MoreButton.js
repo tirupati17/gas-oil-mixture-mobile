@@ -1,9 +1,9 @@
-import React from 'react';
-import TouchableItem from 'react-navigation/src/views/TouchableItem';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import React from 'react'
+import TouchableItem from 'react-navigation/src/views/TouchableItem'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 //helpers
-import { Constants } from '../assets';
+import { Constants } from '../assets'
 
 const MoreButton = ({
   onPress,
@@ -22,6 +22,6 @@ const MoreButton = ({
     }}
   >
     <Icon name={iconName} color={Constants.BORDER} size={iconSize} />
-  </TouchableItem>;
+  </TouchableItem>
 
-export default MoreButton;
+export default MoreButton

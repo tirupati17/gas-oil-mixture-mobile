@@ -1,10 +1,10 @@
 export default unit => {
   switch (unit) {
     case 'liters':
-      return 'litersUnit';
+      return 'litersUnit'
     case 'us':
-      return 'usGallons';
+      return 'usGallons'
     case 'imperial':
-      return 'imperialGallons';
+      return 'imperialGallons'
   }
-};
+}

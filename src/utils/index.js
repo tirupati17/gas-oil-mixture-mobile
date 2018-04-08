@@ -1,5 +1,5 @@
-import shareResult from './shareResult';
-import shareApp from './shareApp';
-import rateApp from './rateApp';
+import shareResult from './shareResult'
+import shareApp from './shareApp'
+import rateApp from './rateApp'
 
-export { shareResult, shareApp, rateApp };
+export { shareResult, shareApp, rateApp }

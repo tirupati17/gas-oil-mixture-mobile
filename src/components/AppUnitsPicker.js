@@ -1,9 +1,9 @@
-import React from 'react';
-import { Picker, View, Text } from 'react-native';
+import React from 'react'
+import { Picker, View, Text } from 'react-native'
 
 //helpers
-import I18n from '../i18n';
-import GlobalStyles from '../assets/GlobalStyles';
+import I18n from '../i18n'
+import GlobalStyles from '../assets/GlobalStyles'
 
 const AppUnitsPicker = ({ setUnit, selectedUnit, locale }) =>
   <View>
@@ -22,6 +22,6 @@ const AppUnitsPicker = ({ setUnit, selectedUnit, locale }) =>
         value="imperial"
       />
     </Picker>
-  </View>;
+  </View>
 
-export default AppUnitsPicker;
+export default AppUnitsPicker

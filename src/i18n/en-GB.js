@@ -1,4 +1,4 @@
-import { Constants } from '../assets';
+import { Constants } from '../assets'
 
 //ENGLISH
 
@@ -46,7 +46,7 @@ const texts = {
   rateAppInPlayStore: 'Please rate this app in Play Store',
   doYouLikeApp: 'Do you like app?',
   unit: 'Unit:',
-};
+}
 
 const units = {
   liters: 'liters',
@@ -57,7 +57,7 @@ const units = {
   gal: 'gal.',
   ounce: 'ounce',
   oz: 'oz.',
-};
+}
 
 const states = {
   sk: 'Slovak',
@@ -69,11 +69,11 @@ const states = {
   ru: 'Russian',
   pl: 'Polish ',
   zh: 'Chinese',
-  es: 'Spanish'
-};
+  es: 'Spanish',
+}
 
 export default {
   ...texts,
   ...units,
   ...states,
-};
+}

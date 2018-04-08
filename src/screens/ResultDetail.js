@@ -1,20 +1,20 @@
-import React from 'react';
-import { ScrollView, KeyboardAvoidingView, View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { TextField } from 'react-native-material-textfield';
+import React from 'react'
+import { ScrollView, KeyboardAvoidingView, View, Text } from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { TextField } from 'react-native-material-textfield'
 
 //helpers
-import { GlobalStyles, Constants } from '../assets';
-import I18n from '../i18n';
-import { getUnit } from '../helpers';
+import { GlobalStyles, Constants } from '../assets'
+import I18n from '../i18n'
+import { getUnit } from '../helpers'
 
-let descInput;
+let descInput
 
 const resetError = (value, callback) => {
   if (value !== 0) {
-    callback;
+    callback
   }
-};
+}
 
 const SaveResult = ({
   item,
@@ -39,8 +39,8 @@ const SaveResult = ({
           tintColor={Constants.PRIMARY_COLOR}
           value={name}
           onChangeText={value => {
-            setName(value);
-            resetError(value, setError(''));
+            setName(value)
+            resetError(value, setError(''))
           }}
           onSubmitEditing={() => descInput.focus()}
           returnKeyType={'next'}
@@ -99,6 +99,6 @@ const SaveResult = ({
         </View>
       </View>
     </KeyboardAvoidingView>
-  </ScrollView>;
+  </ScrollView>
 
-export default SaveResult;
+export default SaveResult

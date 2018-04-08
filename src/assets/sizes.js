@@ -1,8 +1,8 @@
-import { Dimensions } from 'react-native';
+import { Dimensions } from 'react-native'
 
-const { width, height } = Dimensions.get('window');
-const screenHeight = width < height ? height : width;
-const screenWidth = width < height ? width : height;
+const { width, height } = Dimensions.get('window')
+const screenHeight = width < height ? height : width
+const screenWidth = width < height ? width : height
 
 export default {
   // Window Dimensions
@@ -23,4 +23,4 @@ export default {
   marginSml: 8,
 
   borderRadius: 2,
-};
+}

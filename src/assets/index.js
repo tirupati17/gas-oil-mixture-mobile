@@ -1,4 +1,4 @@
-import Constants from './constants';
-import GlobalStyles from './GlobalStyles';
+import Constants from './constants'
+import GlobalStyles from './GlobalStyles'
 
-export { Constants, GlobalStyles };
+export { Constants, GlobalStyles }
