@@ -21,8 +21,7 @@ export default () => {
     result = result * IMPERIAL_GAL_TO_OZ_CONST
   }
 
-  const rounded = Math.round(result)
-  const withFiniteCheck = isFinite(rounded) ? rounded : 0
+  const withFiniteCheck = isFinite(result) ? result : 0
 
   store.dispatch(setResult(withFiniteCheck))
 }

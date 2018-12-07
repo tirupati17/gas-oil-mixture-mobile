@@ -31,12 +31,15 @@ const withReduxConnect = connect(
   dispatch => bindActionCreators({ saveResult }, dispatch),
 )
 
-const withResultProps = withProps(({ result, locale }) => ({
-  resultString: `${I18n.toNumber(result, {
-    precision: 0,
-    delimiter: ' ',
-  })} ${I18n.t(getUnit().smallShort, { locale })}`,
-}))
+const withResultProps = withProps(({ result, locale }) => {
+const unit = getUnit().smallShort
+  return {
+    resultString: `${I18n.toNumber(result, {
+      precision: unit === 'ml' ? 0 : 1,
+      delimiter: ' ',
+    })} ${I18n.t(getUnit().smallShort, { locale })}`,
+  }
+})
 
 const withResultHandlers = withHandlers({
   openOptions: ({
