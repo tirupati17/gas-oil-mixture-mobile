@@ -1,20 +1,20 @@
-<p align="center"><img src="https://lh3.googleusercontent.com/h4l0OfLfODXkIXz0y0HuqL2b5DPTt2g58szCHVWd9e2Ygd9RkajIAksLgz7DJoqvD30S=w300-rw?raw=true" width="150"></p>
+![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
+![License](https://img.shields.io/github/license/JakeLin/SwiftWeather.svg?style=flat)
 
+![SIP-Calculator](https://raw.githubusercontent.com/tirupati17/sip-calculator-swift/master/SIP/Resources/iphone_5s.png)
 
-# Gas/Oil mix ratio calculator
+SIP calculator calculates the future value of SIP (Systematic Investment Plan) payments.
 
-Calculate the Gas/Oil mixture ratio. Quickly, easily and without ads.
+This app is available in the [AppStore](https://itunes.apple.com/us/app/sip-calculator/id1092822415?ls=1&mt=8) and [PlayStore](https://itunes.apple.com/us/app/sip-calculator/id1092822415?ls=1&mt=8)
 
-App calculate the required amount of oil for proper fuel/oil mix in 2 stroke engine. 
+#Description
 
-
-### Google Play
-https://play.google.com/store/apps/details?id=com.filippofilip.oilratiocalc
+SIP calculator calculates the future value of SIP (Systematic Investment Plan) payments.
 
 
 ### App preview
 
-<div align="center"><img src="https://github.com/filippofilip95/gas-oil-ratio-calc/blob/master/previews/app.gif?raw=true" width="300"></div>
+<div align="center"></div>
 
 
 ## Developement
